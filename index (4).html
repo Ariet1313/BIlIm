@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a1a2f">
+<title>СтудХаб — олимпиады и активности для школьников</title>
+<meta name="description" content="СтудХаб — платформа внешкольных возможностей: олимпиады, конкурсы, летние школы и программы для школьников 8–12 классов.">
+
+
+<style type="text/css">@font-face {font-family:'Manrope';font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:400;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:500;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:600;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:600;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:600;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:600;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:600;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:600;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:700;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/greek/wght/normal.woff2);unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Manrope';font-style:normal;font-weight:800;src:url(/cf-fonts/v/manrope/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:500;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:500;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:500;src:url(/cf-fonts/v/unbounded/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:500;src:url(/cf-fonts/v/unbounded/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:500;src:url(/cf-fonts/v/unbounded/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:600;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:600;src:url(/cf-fonts/v/unbounded/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:600;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:600;src:url(/cf-fonts/v/unbounded/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:600;src:url(/cf-fonts/v/unbounded/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:700;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:700;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:700;src:url(/cf-fonts/v/unbounded/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:700;src:url(/cf-fonts/v/unbounded/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:700;src:url(/cf-fonts/v/unbounded/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:800;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:800;src:url(/cf-fonts/v/unbounded/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:800;src:url(/cf-fonts/v/unbounded/5.2.8/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:800;src:url(/cf-fonts/v/unbounded/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Unbounded';font-style:normal;font-weight:800;src:url(/cf-fonts/v/unbounded/5.2.8/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}</style>
+<style>
+  :root{
+    --bg:#071426;
+    --bg-2:#0b1d34;
+    --panel:#0f2540;
+    --panel-2:#132c4c;
+    --line:rgba(255,255,255,.10);
+    --line-2:rgba(255,255,255,.16);
+    --ink:#f2f6fc;
+    --ink-2:#a8bdd6;
+    --ink-3:#6d87a5;
+    --gold:#e8b45a;
+    --gold-2:#c9931f;
+    --sea:#3fd0c9;
+    --rose:#ef6f8f;
+    --violet:#9d7bff;
+    --r:20px;
+    --r-sm:13px;
+    --head-h:64px;
+    --tab-h:66px;
+    --shadow:0 18px 40px -22px rgba(0,0,0,.9);
+    --font-d:"Unbounded",Inter,sans-serif;
+    --font-b:"Manrope",Inter,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--font-b); font-size:16px; line-height:1.55;
+    -webkit-font-smoothing:antialiased; overscroll-behavior-y:none;
+  }
+  body:before{
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(1100px 620px at 82% -10%, rgba(63,208,201,.16), transparent 62%),
+      radial-gradient(900px 520px at 6% 4%, rgba(157,123,255,.14), transparent 60%),
+      radial-gradient(760px 460px at 50% 106%, rgba(232,180,90,.12), transparent 66%);
+  }
+  button{font:inherit; color:inherit}
+  input,select,textarea{font:inherit}
+  a{color:inherit}
+  ::-webkit-scrollbar{width:9px;height:9px}
+  ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14); border-radius:9px}
+
+  /* ===================== ШАПКА ===================== */
+  .apphead{
+    position:sticky; top:0; z-index:80; height:var(--head-h);
+    display:flex; align-items:center; gap:14px; padding:0 22px;
+    background:rgba(7,20,38,.78); backdrop-filter:blur(20px) saturate(160%);
+    border-bottom:1px solid var(--line);
+  }
+  .logo{display:flex; align-items:center; gap:11px; font-family:var(--font-d); font-weight:700; font-size:16.5px; letter-spacing:-.02em; cursor:pointer}
+  .logo i{
+    width:33px; height:33px; flex:none; border-radius:10px; display:grid; place-items:center; font-style:normal;
+    background:linear-gradient(150deg,var(--gold),#8a5f12); color:#241703; font-family:var(--font-d); font-weight:800; font-size:15px;
+    box-shadow:0 8px 18px -10px rgba(232,180,90,.8);
+  }
+  .logo small{display:block; font-family:var(--font-b); font-size:10px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin-top:1px}
+  .headnav{display:none; gap:4px; margin-left:14px}
+  @media(min-width:900px){ .headnav{display:flex} }
+  .headnav button{
+    border:0; background:none; font-size:13.5px; font-weight:600; color:var(--ink-2);
+    padding:9px 14px; border-radius:10px; cursor:pointer;
+  }
+  .headnav button:hover{color:var(--ink); background:rgba(255,255,255,.05)}
+  .head-spacer{flex:1}
+  .hbtn{border:1px solid var(--line-2); background:rgba(255,255,255,.04); border-radius:11px; padding:9px 15px; font-size:13px; font-weight:700; cursor:pointer; white-space:nowrap}
+  .hbtn:hover{background:rgba(255,255,255,.09)}
+  .hbtn.gold{background:linear-gradient(150deg,var(--gold),var(--gold-2)); color:#241703; border-color:transparent}
+  @media(max-width:640px){ .hbtn:not(.gold){display:none} }
+
+  /* ===================== ЭКРАНЫ ===================== */
+  .screen{display:none; position:relative; z-index:1; padding-bottom:calc(var(--tab-h) + env(safe-area-inset-bottom) + 40px)}
+  .screen.on{display:block}
+  .shell{width:min(1220px,100% - 44px); margin:0 auto}
+  @media(max-width:640px){ .shell{width:calc(100% - 28px)} }
+
+  /* ===================== ГЕРОЙ ===================== */
+  .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line)}
+  .hero .shell{padding:52px 0 46px; position:relative; z-index:2}
+  .hero:after{
+    content:""; position:absolute; inset:0; z-index:1; opacity:.5; pointer-events:none;
+    background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:52px 52px;
+    mask-image:radial-gradient(74% 66% at 40% 24%,#000,transparent 78%);
+  }
+  .kicker{
+    display:inline-flex; align-items:center; gap:9px; font-size:11.5px; font-weight:700;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--gold);
+    border:1px solid rgba(232,180,90,.32); background:rgba(232,180,90,.08);
+    padding:7px 14px; border-radius:999px;
+  }
+  .kicker .dot{width:6px; height:6px; border-radius:50%; background:var(--gold); box-shadow:0 0 10px var(--gold)}
+  .hero h1{
+    font-family:var(--font-d); font-weight:700; letter-spacing:-.035em; line-height:1.03;
+    font-size:clamp(30px,6.2vw,58px); margin:20px 0 16px; max-width:20ch;
+  }
+  .hero h1 .hl{
+    background:linear-gradient(96deg,var(--gold),#f6d79a 45%,var(--sea));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{font-size:clamp(15px,1.7vw,17.5px); color:var(--ink-2); max-width:62ch; margin:0 0 30px}
+  @media(max-width:640px){ .hero .shell{padding:34px 0 32px} }
+
+  .searchbar{
+    display:flex; align-items:center; gap:12px; max-width:720px;
+    background:linear-gradient(180deg,var(--panel-2),var(--panel));
+    border:1px solid var(--line-2); border-radius:16px; padding:6px 6px 6px 18px;
+    box-shadow:var(--shadow);
+  }
+  .searchbar svg{width:19px; height:19px; flex:none; stroke:var(--ink-3); fill:none; stroke-width:2; stroke-linecap:round}
+  .searchbar input{flex:1; min-width:0; border:0; outline:0; background:transparent; color:var(--ink); font-size:16px; padding:15px 0}
+  .searchbar input::placeholder{color:var(--ink-3)}
+  .searchbar button{
+    flex:none; border:0; border-radius:12px; padding:13px 22px; font-size:14px; font-weight:800; cursor:pointer;
+    background:linear-gradient(150deg,var(--gold),var(--gold-2)); color:#241703;
+  }
+  @media(max-width:520px){ .searchbar button{display:none} .searchbar{padding:4px 16px} }
+
+  .metrics{display:flex; gap:38px; flex-wrap:wrap; margin-top:34px}
+  .metric b{display:block; font-family:var(--font-d); font-size:26px; font-weight:700; letter-spacing:-.03em}
+  .metric span{font-size:12px; color:var(--ink-3); font-weight:600; letter-spacing:.02em}
+  .metric:nth-child(2) b{color:var(--sea)}
+  .metric:nth-child(3) b{color:var(--gold)}
+  @media(max-width:640px){ .metrics{gap:24px; margin-top:26px} .metric b{font-size:21px} }
+
+  /* ===================== ФИЛЬТРЫ ===================== */
+  .filterbar{position:sticky; top:var(--head-h); z-index:60; background:rgba(9,24,44,.88); backdrop-filter:blur(18px); border-bottom:1px solid var(--line)}
+  .filterbar .shell{display:flex; align-items:center; gap:10px; padding:12px 0; flex-wrap:wrap}
+  .fsel{
+    border:1px solid var(--line-2); background:rgba(255,255,255,.04); color:var(--ink);
+    border-radius:11px; padding:10px 13px; font-size:13px; font-weight:700; cursor:pointer;
+  }
+  .fsel:hover{background:rgba(255,255,255,.08)}
+  .ftoggles{display:flex; gap:8px; flex-wrap:wrap; margin-left:auto}
+  @media(max-width:640px){ .ftoggles{margin-left:0; width:100%; overflow-x:auto; padding-bottom:2px} }
+  .ft{
+    border:1px solid var(--line-2); background:transparent; border-radius:999px; padding:9px 15px;
+    font-size:12.5px; font-weight:700; color:var(--ink-2); cursor:pointer; white-space:nowrap;
+  }
+  .ft:hover{color:var(--ink)}
+  .ft.on{background:var(--gold); border-color:var(--gold); color:#241703}
+  .freset{border:0; background:none; color:var(--ink-3); font-size:12.5px; font-weight:700; cursor:pointer; padding:9px 4px}
+  .freset:hover{color:var(--ink-2)}
+
+  /* ===================== СЕКЦИИ И КАРТОЧКИ ===================== */
+  .section{padding:34px 0 8px}
+  .sec-head{display:flex; align-items:flex-end; gap:14px; margin-bottom:22px; flex-wrap:wrap}
+  .sec-head h2{font-family:var(--font-d); font-weight:600; letter-spacing:-.03em; font-size:clamp(20px,3vw,27px); margin:0}
+  .sec-head .sub{color:var(--ink-3); font-size:13px; font-weight:600; padding-bottom:4px}
+  .sec-head .more{margin-left:auto; border:1px solid var(--line-2); background:rgba(255,255,255,.04); border-radius:11px; padding:9px 15px; font-size:12.5px; font-weight:700; cursor:pointer}
+
+  .cards{display:grid; gap:16px; grid-template-columns:1fr}
+  @media(min-width:700px){ .cards{grid-template-columns:repeat(2,1fr)} }
+  @media(min-width:1060px){ .cards{grid-template-columns:repeat(3,1fr)} }
+
+  .card{
+    position:relative; text-align:left; cursor:pointer; overflow:hidden;
+    background:linear-gradient(180deg,var(--panel-2),var(--panel));
+    border:1px solid var(--line); border-radius:var(--r); padding:20px;
+    display:flex; flex-direction:column; gap:13px;
+    transition:transform .16s cubic-bezier(.2,.8,.3,1), border-color .16s, box-shadow .2s;
+  }
+  .card:before{
+    content:""; position:absolute; inset:0 0 auto 0; height:3px;
+    background:linear-gradient(90deg,var(--gold),var(--sea),transparent 72%);
+    opacity:.55;
+  }
+  .card:hover{transform:translateY(-4px); border-color:var(--line-2); box-shadow:0 26px 50px -28px rgba(0,0,0,.95)}
+  .card:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
+  .card .head{display:flex; gap:13px; align-items:flex-start}
+  .crest{
+    width:44px; height:44px; flex:none; border-radius:13px; display:grid; place-items:center; font-size:20px;
+    background:rgba(255,255,255,.06); border:1px solid var(--line);
+  }
+  .card h3{margin:0 0 4px; font-size:16.5px; font-weight:800; letter-spacing:-.02em; line-height:1.28}
+  .card .org{font-size:12px; color:var(--ink-3); font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .tags{display:flex; gap:6px; flex-wrap:wrap}
+  .tag{font-size:11px; font-weight:700; letter-spacing:.02em; padding:4px 10px; border-radius:999px; background:rgba(255,255,255,.06); color:var(--ink-2)}
+  .tag.cat{background:rgba(232,180,90,.14); color:#f0c877}
+  .tag.urgent{background:rgba(239,111,143,.16); color:#ff9cb4}
+  .card .desc{font-size:13.5px; color:var(--ink-2); margin:0; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden}
+  .facts-mini{display:flex; flex-direction:column; gap:7px; padding-top:2px}
+  .facts-mini div{display:flex; gap:10px; font-size:12.5px; align-items:baseline}
+  .facts-mini .k{color:var(--ink-3); min-width:76px; flex:none; font-weight:600}
+  .facts-mini .v{color:var(--ink-2); font-weight:600}
+  .card .bar{display:flex; align-items:center; gap:12px; margin-top:auto; padding-top:14px; border-top:1px solid var(--line)}
+  .due{font-size:12.5px; font-weight:800; display:inline-flex; align-items:center; gap:7px}
+  .due:before{content:""; width:7px; height:7px; border-radius:50%; background:currentColor}
+  .due.urgent{color:var(--rose)} .due.soon{color:var(--gold)} .due.ok{color:var(--sea)} .due.open{color:var(--violet)}
+  .money{margin-left:auto; font-size:12px; font-weight:800; letter-spacing:.02em; padding:5px 11px; border-radius:8px}
+  .money.free{background:rgba(63,208,201,.14); color:#7fe6e0}
+  .money.paid{background:rgba(255,255,255,.06); color:var(--ink-3)}
+
+  .empty{padding:52px 26px; text-align:center; border:1px dashed var(--line-2); border-radius:var(--r); color:var(--ink-2)}
+  .empty b{display:block; font-family:var(--font-d); font-weight:600; font-size:17px; color:var(--ink); margin-bottom:7px}
+
+  /* ===================== ПАНЕЛИ / ФОРМЫ ===================== */
+  .panel{
+    background:linear-gradient(180deg,var(--panel-2),var(--panel));
+    border:1px solid var(--line); border-radius:var(--r); padding:26px; box-shadow:var(--shadow);
+  }
+  @media(max-width:640px){ .panel{padding:20px} }
+  .panel h3{font-family:var(--font-d); font-weight:600; font-size:17px; letter-spacing:-.02em; margin:0 0 6px}
+  .panel .hint{margin:0 0 20px; font-size:13.5px; color:var(--ink-3)}
+  .formgrid{display:grid; gap:16px; grid-template-columns:1fr}
+  @media(min-width:700px){ .formgrid{grid-template-columns:1fr 1fr} }
+  .field{display:flex; flex-direction:column; gap:8px}
+  .field label{font-size:11.5px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-3)}
+  .field input,.field select,.field textarea{
+    width:100%; border:1px solid var(--line-2); background:rgba(4,14,28,.5); color:var(--ink);
+    border-radius:12px; padding:13px 14px; outline:none; font-size:15px; font-weight:500;
+  }
+  .field textarea{min-height:92px; resize:vertical; line-height:1.5}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold); box-shadow:0 0 0 3px rgba(232,180,90,.14)}
+  .btn{
+    border:0; border-radius:13px; padding:14px 22px; font-size:14.5px; font-weight:800; cursor:pointer;
+    display:inline-flex; align-items:center; justify-content:center; gap:9px;
+  }
+  .btn.gold{background:linear-gradient(150deg,var(--gold),var(--gold-2)); color:#241703}
+  .btn.ghost{background:rgba(255,255,255,.05); border:1px solid var(--line-2); color:var(--ink)}
+  .btn.wide{width:100%}
+  .okline{font-size:13.5px; font-weight:700; color:var(--sea); margin-top:12px}
+  .two{display:grid; grid-template-columns:1fr; gap:12px}
+  @media(min-width:640px){ .two{grid-template-columns:1fr 1fr} }
+
+  /* ===================== СТРАНИЦА АКТИВНОСТИ ===================== */
+  .dwrap{padding:26px 0 0}
+  .backline{display:flex; align-items:center; gap:14px; margin-bottom:20px}
+  .backline button{border:1px solid var(--line-2); background:rgba(255,255,255,.04); border-radius:11px; padding:10px 15px; font-size:13px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:8px}
+  .backline span{font-size:12.5px; color:var(--ink-3); font-weight:600}
+  .dbadge{display:flex; align-items:center; gap:9px; margin-bottom:16px; flex-wrap:wrap}
+  .dtitle{font-family:var(--font-d); font-weight:700; letter-spacing:-.035em; line-height:1.06; font-size:clamp(25px,4.6vw,42px); margin:0 0 14px; max-width:24ch}
+  .dorg{font-size:14px; color:var(--ink-2); margin-bottom:6px}
+  .dact{display:flex; gap:12px; flex-wrap:wrap; margin-top:22px}
+  .pill{font-size:11.5px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; padding:6px 12px; border-radius:8px}
+  .pill.cat{background:rgba(232,180,90,.14); color:#f0c877}
+  .pill.fmt{background:rgba(63,208,201,.12); color:#7fe6e0}
+  .grades{font-size:13px; color:var(--ink-3); font-weight:600}
+
+  .footcards{display:grid; gap:18px; padding:30px 0}
+  @media(min-width:980px){ .footcards{grid-template-columns:1fr 380px} }
+  .block{background:linear-gradient(180deg,var(--panel-2),var(--panel)); border:1px solid var(--line); border-radius:var(--r); padding:24px; margin-bottom:18px}
+  @media(max-width:640px){ .block{padding:19px} }
+  .block h4{
+    font-family:var(--font-d); font-weight:600; font-size:15.5px; letter-spacing:-.01em; margin:0 0 14px;
+    display:flex; align-items:center; gap:11px;
+  }
+  .block h4 .num{
+    width:26px; height:26px; flex:none; border-radius:9px; display:grid; place-items:center;
+    background:rgba(232,180,90,.14); color:var(--gold); font-family:var(--font-b); font-size:12px; font-weight:800;
+  }
+  .block p{margin:0; font-size:15px; color:var(--ink-2)}
+  .block ol{margin:0; padding:0; list-style:none; counter-reset:k; display:flex; flex-direction:column; gap:14px}
+  .block ol li{counter-increment:k; position:relative; padding-left:40px; font-size:15px; color:var(--ink-2)}
+  .block ol li:before{
+    content:counter(k,decimal-leading-zero); position:absolute; left:0; top:0;
+    font-family:var(--font-b); font-size:12.5px; font-weight:800; color:var(--gold);
+    border:1px solid rgba(232,180,90,.34); border-radius:9px; width:29px; height:25px; display:grid; place-items:center;
+  }
+  .block ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:11px}
+  .block ul li{position:relative; padding-left:23px; font-size:15px; color:var(--ink-2)}
+  .block ul li:before{content:""; position:absolute; left:5px; top:9px; width:8px; height:8px; border-radius:2px; background:var(--sea); transform:rotate(45deg)}
+
+  .deadline-box{
+    border-radius:var(--r-sm); padding:20px; margin-bottom:18px; border:1px solid var(--line-2);
+    background:linear-gradient(140deg,rgba(232,180,90,.13),rgba(63,208,201,.08));
+  }
+  .deadline-box b{display:block; font-family:var(--font-d); font-weight:700; font-size:22px; letter-spacing:-.03em; color:var(--gold)}
+  .deadline-box small{display:block; margin-top:6px; font-size:12.5px; color:var(--ink-2); line-height:1.45}
+  .deadline-box.closed{background:rgba(255,255,255,.035); border-color:var(--line)}
+  .deadline-box.closed b{color:var(--ink-3)}
+  .deadline-box.urgent{background:linear-gradient(140deg,rgba(239,111,143,.14),rgba(157,123,255,.08)); border-color:rgba(239,111,143,.34)}
+  .deadline-box.urgent b{color:var(--rose)}
+  .factlist{display:flex; flex-direction:column}
+  .factlist div{display:flex; justify-content:space-between; gap:14px; padding:13px 0; border-bottom:1px solid var(--line); font-size:14px}
+  .factlist div:last-child{border-bottom:0}
+  .factlist .k{color:var(--ink-3); font-weight:600; font-size:13px}
+  .factlist .v{font-weight:700; text-align:right}
+
+  /* ===================== ОРГАНИЗАТОРАМ ===================== */
+  .kpirow{display:grid; gap:14px; grid-template-columns:1fr; padding:26px 0 8px}
+  @media(min-width:640px){ .kpirow{grid-template-columns:repeat(3,1fr)} }
+  .kpi{background:linear-gradient(180deg,var(--panel-2),var(--panel)); border:1px solid var(--line); border-radius:var(--r-sm); padding:22px}
+  .kpi b{display:block; font-family:var(--font-d); font-weight:700; font-size:30px; letter-spacing:-.04em; color:var(--gold)}
+  .kpi:nth-child(2) b{color:var(--sea)} .kpi:nth-child(3) b{color:var(--violet)}
+  .kpi span{font-size:12px; color:var(--ink-3); font-weight:600}
+
+  .reqrow{display:flex; flex-direction:column; gap:5px; padding:16px 0; border-bottom:1px solid var(--line); font-size:14px}
+  .reqrow:last-child{border-bottom:0}
+  .reqrow .line1{display:flex; gap:12px; align-items:baseline; flex-wrap:wrap}
+  .reqrow .nm{font-weight:800; font-size:14.5px}
+  .reqrow .gr{font-size:12px; color:var(--ink-3); font-weight:600; background:rgba(255,255,255,.05); padding:3px 9px; border-radius:7px}
+  .reqrow .when{margin-left:auto; font-size:12px; color:var(--ink-3); white-space:nowrap}
+  .reqrow .det{font-size:13.5px; color:var(--ink-2)}
+  .reqrow .cmt{font-size:13.5px; color:var(--ink-3); font-style:italic}
+
+  /* ===================== ТАББАР ===================== */
+  .tabbar{
+    position:fixed; left:0; right:0; bottom:0; z-index:90;
+    height:calc(var(--tab-h) + env(safe-area-inset-bottom)); padding-bottom:env(safe-area-inset-bottom);
+    display:grid; grid-template-columns:repeat(4,1fr);
+    background:rgba(9,24,44,.95); backdrop-filter:blur(22px) saturate(160%);
+    border-top:1px solid var(--line);
+  }
+  .tab{border:0; background:none; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:10.5px; font-weight:700; color:var(--ink-3); cursor:pointer; position:relative}
+  .tab svg{width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+  .tab.on{color:var(--gold)}
+  .tab.on:before{content:""; position:absolute; top:0; width:32px; height:3px; border-radius:0 0 4px 4px; background:var(--gold)}
+  @media(min-width:900px){ .tabbar{display:none} .screen{padding-bottom:60px} }
+
+  footer.foot{border-top:1px solid var(--line); margin-top:46px; padding:34px 0; color:var(--ink-3); font-size:12.5px}
+  footer.foot .shell{display:flex; gap:26px; flex-wrap:wrap; justify-content:space-between; align-items:flex-start}
+  footer.foot b{display:block; font-family:var(--font-d); font-weight:600; font-size:14px; color:var(--ink); margin-bottom:8px}
+  footer.foot .note{max-width:52ch; line-height:1.6}
+  footer.foot .developed{margin-top:18px; font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3)}
+</style>
+</head>
+<body>
+
+<header class="apphead">
+  <div class="logo" id="toHome">
+    <i>С</i>
+    <span>СтудХаб<small>возможности</small></span>
+  </div>
+  <nav class="headnav">
+    <button data-go="feed">Каталог</button>
+    <button data-go="planner">Подбор</button>
+    <button data-go="saved">Мой список</button>
+    <button data-go="org">Организаторам</button>
+  </nav>
+  <div class="head-spacer"></div>
+  <button class="hbtn" data-go="planner">Подобрать активность</button>
+  <button class="hbtn gold" data-go="org">Опубликовать</button>
+</header>
+
+<!-- ================= ЭКРАН: КАТАЛОГ ================= -->
+<section class="screen on" id="s-feed">
+  <div class="hero">
+    <div class="shell">
+      <span class="kicker"><span class="dot"></span>Олимпиады · конкурсы · летние школы · волонтёрство</span>
+      <h1>Внешкольные возможности <span class="hl">для школьников 8–12 классов</span></h1>
+      <p class="lead">Собранный каталог олимпиад и программ в Кыргызстане, Центральной Азии и мире. По каждой активности — условия участия, сроки подачи заявки и порядок действий.</p>
+      <div class="searchbar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <input id="q" type="search" placeholder="Поиск: физика, программирование, летняя школа, волонтёрство…" autocomplete="off">
+        <button type="button" id="searchGo">Найти</button>
+      </div>
+      <div class="metrics">
+        <div class="metric"><b id="mTotal">0</b><span>активностей в каталоге</span></div>
+        <div class="metric"><b id="mSoon">0</b><span>с дедлайном в 60 дней</span></div>
+        <div class="metric"><b id="mFree">0</b><span>без взноса за участие</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="filterbar">
+    <div class="shell">
+      <select class="fsel" id="fCat" aria-label="Направление"><option value="">Все направления</option></select>
+      <select class="fsel" id="fGrade" aria-label="Класс">
+        <option value="">Любой класс</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+      </select>
+      <select class="fsel" id="fRegion" aria-label="Регион">
+        <option value="">Все регионы</option>
+        <option>Кыргызстан</option><option>Центральная Азия</option><option>Международное</option><option>США</option>
+      </select>
+      <div class="ftoggles">
+        <button class="ft" data-ft="open">Приём открыт</button>
+        <button class="ft" data-ft="free">Бесплатно</button>
+        <button class="ft" data-ft="online">Онлайн</button>
+        <button class="ft" data-ft="soon30">До 30 дней</button>
+        <button class="freset" id="fReset">Сбросить</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="shell section">
+    <div class="sec-head">
+      <h2 id="feedTitle">Каталог активностей</h2>
+      <span class="sub" id="feedCount"></span>
+      <button class="more" data-go="planner">Подобрать под себя</button>
+    </div>
+    <div class="cards" id="feed"></div>
+  </div>
+
+  <footer class="foot">
+    <div class="shell">
+      <div>
+        <b>СтудХаб</b>
+        <div class="note">Каталог внешкольных возможностей для школьников Кыргызстана и Центральной Азии: олимпиады, конкурсы, летние школы, волонтёрство и программы обмена.</div>
+        <div class="developed">Прототип · 2026</div>
+      </div>
+      <div>
+        <b>Разделы</b>
+        <div><a href="#" data-go="feed">Каталог</a> · <a href="#" data-go="planner">Подбор</a> · <a href="#" data-go="saved">Мой список</a> · <a href="#" data-go="org">Организаторам</a></div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- ================= ЭКРАН: ПОДБОР ================= -->
+<section class="screen" id="s-planner">
+  <div class="hero">
+    <div class="shell">
+      <span class="kicker"><span class="dot"></span>Персональный подбор</span>
+      <h1>Возможности, <span class="hl">доступные именно тебе</span></h1>
+      <p class="lead">Укажи свой класс и условия, в которых готов участвовать. Каталог отфильтруется до активностей, куда ты можешь подать заявку.</p>
+    </div>
+  </div>
+
+  <div class="shell section">
+    <div class="panel">
+      <h3>Параметры подбора</h3>
+      <p class="hint">Значения применяются сразу — каталог ниже обновляется автоматически.</p>
+      <div class="formgrid">
+        <div class="field"><label for="pGrade">Класс обучения</label>
+          <select id="pGrade"><option value="">любой</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select>
+        </div>
+        <div class="field"><label for="pRegion">Готов участвовать</label>
+          <select id="pRegion"><option value="">везде</option><option>Кыргызстан</option><option>Центральная Азия</option><option>Международное</option><option>США</option></select>
+        </div>
+        <div class="field"><label for="pDays">Срок до подачи заявки</label>
+          <select id="pDays"><option value="365">не ограничен</option><option value="14">до 2 недель</option><option value="30">до месяца</option><option value="90">до 3 месяцев</option><option value="180">до полугода</option></select>
+        </div>
+        <div class="field"><label for="pBudget">Взнос за участие</label>
+          <select id="pBudget"><option value="">любой</option><option value="free">без взноса</option></select>
+        </div>
+        <div class="field"><label for="pOnline">Формат участия</label>
+          <select id="pOnline"><option value="">любой</option><option value="1">дистанционно</option></select>
+        </div>
+        <div class="field" style="justify-content:flex-end"><button class="btn ghost wide" id="clearPlan">Сбросить параметры</button></div>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin-top:34px">
+      <h2>Подходящие активности</h2><span class="sub" id="planCount"></span>
+    </div>
+    <div class="cards" id="plan"></div>
+  </div>
+</section>
+
+<!-- ================= ЭКРАН: МОЙ СПИСОК ================= -->
+<section class="screen" id="s-saved">
+  <div class="hero">
+    <div class="shell">
+      <span class="kicker"><span class="dot"></span>Личный список</span>
+      <h1>Активности, <span class="hl">в которых ты участвуешь</span></h1>
+      <p class="lead">Отмеченные возможности с оставшимся сроком до подачи заявки — чтобы ничего не пропустить.</p>
+    </div>
+  </div>
+  <div class="shell section">
+    <div class="sec-head"><h2>Мой список</h2><span class="sub" id="savedCount"></span></div>
+    <div class="cards" id="saved"></div>
+  </div>
+</section>
+
+<!-- ================= ЭКРАН: ОРГАНИЗАТОРАМ ================= -->
+<section class="screen" id="s-org">
+  <div class="hero">
+    <div class="shell">
+      <span class="kicker"><span class="dot"></span>Раздел для организаторов</span>
+      <h1>Публикация возможностей <span class="hl">для школьников</span></h1>
+      <p class="lead">Школа, университет, фонд или клуб могут разместить олимпиаду или программу и получать заявки от учеников.</p>
+    </div>
+  </div>
+
+  <div class="shell">
+    <div class="kpirow">
+      <div class="kpi"><b id="kpiAct">0</b><span>опубликовано вами</span></div>
+      <div class="kpi"><b id="kpiReq">0</b><span>получено заявок</span></div>
+      <div class="kpi"><b id="kpiSoon">—</b><span>дней до ближайшего дедлайна</span></div>
+    </div>
+
+    <div class="sec-head" style="margin-top:30px"><h2>Новая возможность</h2><span class="sub">карточка появится в каталоге сразу после публикации</span></div>
+    <div class="panel">
+      <form id="pubForm">
+        <div class="formgrid">
+          <div class="field" style="grid-column:1/-1"><label for="fTitle">Название *</label><input id="fTitle" required placeholder="Олимпиада по информатике"></div>
+          <div class="field"><label for="fOrgName">Организатор</label><input id="fOrgName" placeholder="Школа, университет, фонд"></div>
+          <div class="field"><label for="fCat2">Направление</label><select id="fCat2"></select></div>
+          <div class="field"><label for="fFormats">Формат</label><select id="fFormats"><option>Онлайн</option><option>Оффлайн</option><option>Гибрид</option></select></div>
+          <div class="field"><label for="fGrades">Классы участников</label>
+            <select id="fGrades">
+              <option value="8,9,10,11">8–11 класс</option>
+              <option value="9,10,11">9–11 класс</option>
+              <option value="10,11,12">10–12 класс</option>
+              <option value="9,10,11,12">9–12 класс</option>
+              <option value="8,9,10,11,12">8–12 класс</option>
+            </select>
+          </div>
+          <div class="field"><label for="fDeadline">Дедлайн подачи заявок</label><input id="fDeadline" type="date"></div>
+          <div class="field"><label for="fCost">Взнос</label><select id="fCost"><option value="free">Бесплатно</option><option value="paid">Есть взнос</option></select></div>
+          <div class="field" style="grid-column:1/-1"><label for="fLink">Ссылка на регистрацию</label><input id="fLink" type="url" placeholder="https://"></div>
+          <div class="field" style="grid-column:1/-1"><label for="fDesc">Краткое описание *</label><textarea id="fDesc" required placeholder="Кто может участвовать и что требуется сделать"></textarea></div>
+          <div class="field" style="grid-column:1/-1"><label for="fSteps">Порядок участия — по одному пункту в строке</label><textarea id="fSteps" placeholder="Регистрация на сайте&#10;Отборочный тур&#10;Финал на кампусе"></textarea></div>
+          <div class="field" style="grid-column:1/-1"><label for="fPrep">Рекомендации по подготовке — по строке на пункт</label><textarea id="fPrep"></textarea></div>
+          <div class="field" style="grid-column:1/-1"><label for="fPerks">Что получает участник — по строке на пункт</label><textarea id="fPerks"></textarea></div>
+          <div style="grid-column:1/-1"><button class="btn gold wide" type="submit">Опубликовать в каталоге</button>
+            <div class="okline" id="pubOk" hidden>Возможность опубликована — карточка уже в каталоге.</div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="sec-head" style="margin-top:34px"><h2>Заявки от школьников</h2><span class="sub">появляются после нажатия «Хочу участвовать»</span></div>
+    <div class="panel">
+      <div class="two" style="margin-bottom:18px">
+        <button class="btn ghost" id="demoReq">Добавить тестовую заявку</button>
+        <button class="btn ghost" id="clearReq">Очистить список</button>
+      </div>
+      <div id="reqList"></div>
+    </div>
+
+    <div class="sec-head" style="margin-top:34px"><h2>Оповещение участников</h2><span class="sub">текст дайджеста для рассылки</span></div>
+    <div class="panel">
+      <div class="field"><label for="digest">Текст оповещения</label>
+        <textarea id="digest" placeholder="Напоминаем: до дедлайна осталось 14 дней. Не забудьте приложить рекомендацию."></textarea>
+      </div>
+      <div style="margin-top:16px"><button class="btn gold wide" id="saveDigest">Сохранить текст</button>
+        <div class="okline" id="digestOk" hidden>Текст сохранён.</div>
+      </div>
+      <p class="hint" style="margin-top:16px; margin-bottom:0">Реальная отправка подписчикам включается после подключения почтового аккаунта.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ЭКРАН: СТРАНИЦА АКТИВНОСТИ ================= -->
+<section class="screen" id="s-detail">
+  <div class="shell dwrap">
+    <div class="backline">
+      <button id="backBtn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        Назад в каталог
+      </button>
+      <span id="dBreadcrumb"></span>
+    </div>
+    <div id="dHead"></div>
+    <div class="footcards">
+      <div id="dMain"></div>
+      <div id="dSide"></div>
+    </div>
+  </div>
+</section>
+
+<nav class="tabbar">
+  <button class="tab on" data-go="feed"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Каталог</button>
+  <button class="tab" data-go="planner"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>Подбор</button>
+  <button class="tab" data-go="saved"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>Мой список</button>
+  <button class="tab" data-go="org"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Организаторам</button>
+</nav>
+
+<script>
+/* ============================================================
+   КАТАЛОГ ДАННЫХ
+   ============================================================ */
+const TODAY = new Date();
+const DAY = 86400000;
+const $ = s => document.querySelector(s);
+
+const CAT_ICON = {
+  "Олимпиады":"🏆","Наука":"🔬","Летние школы":"☀️","Волонтёрство":"🤝",
+  "Дебаты":"🎤","Проекты":"🚀","Творчество":"🎨","Стажировки":"✈️"
+};
+const MONTHS = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+
+const DATA = [
+{id:"resp-olimpiada",title:"Республиканская олимпиада школьников",org:"Министерство образования и науки КР",cat:"Олимпиады",region:"Кыргызстан",
+ desc:"Главная предметная олимпиада страны по математике, физике, химии, биологии, информатике и языкам. Проводится по этапам.",
+ about:"Самая массовая олимпиада страны. Победа на республиканском этапе даёт льготы при поступлении в вузы Кыргызстана и открывает путь в национальные сборные, откуда школьники попадают на международные олимпиады.",
+ who:"Ученики 8–12 классов школ Кыргызстана. На первых этапах участие командное по школе, на республиканском — личное.",
+ what:"Задания олимпиадного уровня по выбранному предмету: теория и задачи, не решаемые школьным шаблоном.",
+ steps:["Сообщить учителю-предметнику о желании участвовать — школа подаёт список","Пройти школьный этап (ноябрь–декабрь)","Выступить на городском или районном этапе","Пройти на республиканский этап весной"],
+ prep:["Разбирать задания прошлых лет","Посещать факультатив или кружок по предмету","Готовиться с напарником — объяснение вслух эффективнее"],
+ perks:["Льготы при поступлении для призёров","Путь в национальную сборную","Дипломы для портфолио"],
+ grades:[8,9,10,11,12],formats:["Оффлайн"],cost:"free",deadline:"2027-01-15",event:"март–апрель 2027",online:false,link:"",added:1},
+{id:"it-cup",title:"Kyrgyzstan IT Cup",org:"Кыргызско-Российский Славянский университет",cat:"Олимпиады",region:"Кыргызстан",
+ desc:"Командные соревнования по программированию: отборочные туры онлайн, финал на кампусе университета.",
+ about:"Формат близок к ICPC: команда из трёх человек, ограниченное время, автоматическая проверка решений на тестах. Хороший вход в олимпиадное программирование.",
+ who:"Школьники 9–12 классов и студенты, владеющие базой алгоритмов.",
+ what:"Пять-восемь задач за три-пять часов: динамика, графы, строки, математика. Результат — по числу решённых задач и штрафному времени.",
+ steps:["Собрать команду из двух-трёх человек","Зарегистрироваться на отборочный тур на платформе KRSU Online Judge","Пройти онлайн-квалификацию","Выступить в финале на кампусе"],
+ prep:["Решать архив задач на KRSU Online Judge и Codeforces","Распределить темы между участниками команды","Внимательно читать условия задач"],
+ perks:["Опыт командного контеста","Знакомство с вузом и преподавателями","Строка в портфолио для IT-направлений"],
+ grades:[9,10,11,12],formats:["Гибрид"],cost:"free",deadline:"2027-02-20",event:"апрель 2027",online:true,link:"https://olymp.krsu.kg/contests",added:2},
+{id:"nacional-inf",title:"Национальная олимпиада по информатике",org:"Платформа Olympiads.kg",cat:"Олимпиады",region:"Кыргызстан",
+ desc:"Дистанционная олимпиада по информатике с разбором задач после каждого тура.",
+ about:"Полностью онлайн — участвовать можно из любого города, нужен только компьютер и интернет. После каждого тура публикуется разбор решений.",
+ who:"Школьники 8–11 классов. Отбора нет, достаточно регистрации на платформе.",
+ what:"Алгоритмические задачи с автоматической проверкой, два тура, ограничение времени на задачу.",
+ steps:["Зарегистрироваться на платформе Olympiads.kg","Изучить правила отправки решений","Пройти первый тур из дома","Разобрать решения и выступить во втором туре"],
+ prep:["Освоить базовый синтаксис Python","Прорешать 20–30 задач на ввод-вывод и циклы","Проверить стабильность интернет-соединения"],
+ perks:["Участие из любого региона","Разбор задач от организаторов","Сертификат участника"],
+ grades:[8,9,10,11],formats:["Онлайн"],cost:"free",deadline:"2026-11-05",event:"ноябрь–декабрь 2026",online:true,link:"https://olympiads.kg/c/1067/1104",added:3},
+{id:"eupho",title:"Европейская олимпиада по физике (EuPhO)",org:"Международный оргкомитет EuPhO",cat:"Олимпиады",region:"Международное",
+ desc:"Международная олимпиада по физике. Участие — через национальную сборную после отбора.",
+ about:"Кыргызстанские школьники уже привозили медали с EuPhO. Путь начинается с республиканской олимпиады и отбора в сборную, затем подготовка с тренером.",
+ who:"Ученики 10–12 классов, прошедшие национальный отбор.",
+ what:"Теоретический тур — три сложные задачи на пять часов; экспериментальный — работа с реальной установкой и обработка измерений.",
+ steps:["Стать призёром республиканской олимпиады по физике","Пройти отбор в национальную сборную","Отработать экспериментальную часть","Выступить в составе сборной страны"],
+ prep:["Изучать углублённую программу: механика, термодинамика, электромагнетизм, оптика","Решать задачи прошлых лет на английском","Учиться оформлять погрешности и графики"],
+ perks:["Медаль международного уровня","Работа с настоящим оборудованием","Льготы и стипендии при поступлении"],
+ grades:[10,11,12],formats:["Оффлайн"],cost:"free",deadline:"2027-03-01",event:"июнь 2027",online:false,link:"",added:4},
+{id:"codeforces",title:"Онлайн-контесты Codeforces",org:"Платформа Codeforces",cat:"Олимпиады",region:"Международное",
+ desc:"Регулярные онлайн-соревнования по программированию — раунды проходят почти каждую неделю.",
+ about:"Не разовое событие, а постоянная тренировка между крупными олимпиадами. Публичный рейтинг виден в профиле участника.",
+ who:"Школьники с базой программирования; дивизионы разделены по уровню.",
+ what:"Набор задач от простых к сложным, пересчёт рейтинга по итогам раунда.",
+ steps:["Зарегистрироваться и начать с дивизиона Div. 4","Участвовать минимум в одном раунде в неделю","После раунда разбирать нерешённые задачи","Переходить в следующий дивизион"],
+ prep:["Настроить рабочее окружение заранее","Вести список сложных тем","Учиться оценивать сложность и выбирать порядок задач"],
+ perks:["Публичный рейтинг и история участия","Практика без привязки к датам","Активное сообщество"],
+ grades:[9,10,11,12],formats:["Онлайн"],cost:"free",deadline:"",event:"круглый год",online:true,link:"https://codeforces.com/contests",added:5},
+{id:"science-fair",title:"Научные конкурсы исследовательских проектов",org:"Google и научные организации",cat:"Наука",region:"Международное",
+ desc:"Конкурс исследовательских проектов: гипотеза, эксперимент, анализ данных, защита результата.",
+ about:"Оценивается не скорость решения задач, а настоящий исследовательский проект: вопрос, метод, данные, вывод. Даже без победы проект становится основой портфолио.",
+ who:"Школьники 13–18 лет, индивидуально или в команде. Работы принимаются на английском.",
+ what:"Письменное описание проекта, презентация и видеозащита.",
+ steps:["Выбрать вопрос, ответ на который можно получить за два-три месяца","Провести эксперимент или собрать данные","Оформить результаты таблицами и графиками","Подать заявку на английском и подготовить видеопрезентацию"],
+ prep:["Найти научного наставника — учителя или преподавателя вуза","Вести лабораторный журнал с первого дня","Учиться писать кратко: 300 слов о проекте важнее длинного текста"],
+ perks:["Проект, пригодный для любых заявок","Навыки исследования и презентации","Возможность выхода в международный финал"],
+ grades:[9,10,11,12],formats:["Онлайн"],cost:"free",deadline:"2027-01-31",event:"весна 2027",online:true,link:"https://www.competitionsciences.org/competitions/google-science-fair/",added:6},
+{id:"biocraft",title:"BioCraft — конкурс по биологии",org:"Royal Society of Chemistry",cat:"Наука",region:"Международное",
+ desc:"Конкурс для участников 11–19 лет: исследовательский проект или научно-популярная работа.",
+ about:"Регистрация открывается в октябре. Формат мягкий — подходит как первый международный конкурс для школьника.",
+ who:"Участники от 11 до 19 лет, школы и отдельные ученики.",
+ what:"Работа по биологии или химии с оценкой научной корректности и ясности изложения.",
+ steps:["Следить за открытием регистрации в октябре","Выбрать тему и формат работы","Оформить материал на английском","Отправить заявку до дедлайна"],
+ prep:["Читать научно-популярные источники на английском","Структурировать текст: вопрос — данные — вывод","Просить учителя прочитать черновик"],
+ perks:["Опыт международного конкурса","Развитие научного английского","Сертификат и обратная связь жюри"],
+ grades:[8,9,10,11,12],formats:["Онлайн"],cost:"free",deadline:"2026-12-01",event:"декабрь 2026",online:true,link:"https://edu.rsc.org/feature/science-competitions-for-your-students-to-enter-this-year/4012442.article",added:7},
+{id:"essay-iocd",title:"Конкурс эссе по химии и устойчивому развитию",org:"IOCD и Royal Society of Chemistry",cat:"Наука",region:"Международное",
+ desc:"Ежегодный конкурс эссе на глобальную тему — например, о доступе к чистой воде.",
+ about:"Тема меняется каждый год и связана с ролью науки в устойчивом развитии. Требуется аргументированный текст на английском с опорой на факты.",
+ who:"Участники до 35 лет; школьники допускаются и попадают в шорт-лист.",
+ what:"Эссе на несколько тысяч знаков: тезис, аргументы, примеры, источники.",
+ steps:["Прочитать тему текущего года","Собрать факты из надёжных источников","Написать черновик и сократить его","Отправить работу до дедлайна"],
+ prep:["Тренировать структуру: тезис, три аргумента, вывод","Указывать источники","Просить вычитку текста"],
+ perks:["Публикация лучших работ","Опыт академического письма","Материал для портфолио"],
+ grades:[10,11,12],formats:["Онлайн"],cost:"free",deadline:"2027-02-28",event:"весна 2027",online:true,link:"https://www.iocd.org/v3_site/Essay/competition2026.html",added:8},
+{id:"history-olympiad",title:"International History Olympiad",org:"International History Bee & Bowl",cat:"Олимпиады",region:"Международное",
+ desc:"Олимпиада по истории с личными и командными турами; финал 2027 года — в Берлине.",
+ about:"Сочетает исторический квиз в формате быстрых ответов, письменные туры и защиту исследовательской работы. Участие идёт через региональные отборочные этапы.",
+ who:"Школьники 9–12 классов с сильными знаниями мировой и национальной истории.",
+ what:"Bee — устные вопросы на скорость, Bowl — командная игра, а также письменный тур и исследовательская работа.",
+ steps:["Пройти региональный отборочный этап","Выбрать категории: мировая история, история региона, тематические направления","Подготовить исследовательскую работу","Подать заявку на финал"],
+ prep:["Разбирать причинно-следственные связи, а не только даты","Тренировать скорость ответа","Готовиться на английском — официальном языке олимпиады"],
+ perks:["Финал в Берлине","Портфолио для гуманитарных направлений","Опыт командных и личных туров"],
+ grades:[9,10,11,12],formats:["Оффлайн"],cost:"paid",deadline:"2027-02-01",event:"17–24 июля 2027, Берлин",online:false,link:"https://www.historyolympiad.com/",added:9},
+{id:"yygs",title:"Yale Young Global Scholars (YYGS)",org:"Yale University",cat:"Летние школы",region:"США",
+ desc:"Двухнедельная летняя программа в Йеле: STEM, гуманитарные науки, культура, глобальные вызовы.",
+ about:"Семинары в стиле американского университета: мало лекций, много обсуждений и групповых проектов. Главная ценность — окружение учеников из десятков стран.",
+ who:"Ученики 10–11 классов (16–18 лет) со свободным английским.",
+ what:"Две недели семинаров, дебатов и проекта по выбранному треку, плюс внеклассная программа.",
+ steps:["Выбрать трек и проверить сроки подачи","Подготовить эссе и рекомендацию учителя","При необходимости подать на финансовую поддержку","Заняться визой и билетами заранее"],
+ prep:["Писать эссе о своём интересе с конкретными примерами","Взять рекомендацию у учителя, знающего лично","Проверить сроки оформления визы США"],
+ perks:["Опыт обучения в университете Лиги плюща","Международное окружение","Сильный аргумент в заявке на поступление"],
+ grades:[10,11],formats:["Оффлайн"],cost:"paid",deadline:"2027-01-08",event:"июнь–июль 2027, Нью-Хейвен",online:false,link:"https://globalscholars.yale.edu/",added:10},
+{id:"stanford-humanities",title:"Stanford Summer Humanities Institute",org:"Stanford University",cat:"Летние школы",region:"США",
+ desc:"Летняя программа по гуманитарным наукам: исследовательская работа и академическое письмо.",
+ about:"Участники работают над исследовательским вопросом и учатся писать академический текст университетского уровня. Много чтения, письма и работы в малых группах.",
+ who:"Ученики 10–11 классов с сильным английским и интересом к гуманитарным наукам.",
+ what:"Семинары, чтение, письменные работы и итоговый исследовательский проект.",
+ steps:["Выбрать направление и изучить требования","Подготовить письменную работу-образец и мотивационное письмо","Собрать рекомендацию и документы об успеваемости","Подать заявку и заявиться на стипендию"],
+ prep:["Читать много на английском","Писать короткие эссе каждую неделю и править их","Заранее готовить рекомендацию"],
+ perks:["Навык академического письма","Портфолио письменных работ","Знакомство с преподавателями Стэнфорда"],
+ grades:[10,11],formats:["Оффлайн"],cost:"paid",deadline:"2027-02-15",event:"июнь–июль 2027",online:false,link:"https://summerhumanities.spcs.stanford.edu/",added:11},
+{id:"cau-olympiad",title:"International Olympiad в Central Asian University",org:"Central Asian University",cat:"Олимпиады",region:"Центральная Азия",
+ desc:"Олимпиада по физике, математике и химии для 9–11 классов; победители получают полную стипендию.",
+ about:"Одна из самых выгодных возможностей региона: главный приз — 100% стипендия на весь период обучения в университете. Олимпиада проходит очно на кампусе.",
+ who:"Ученики 9–11 классов, отдельно по каждому предмету.",
+ what:"Задачи олимпиадного уровня по выбранной дисциплине, письменный тур в аудитории.",
+ steps:["Выбрать предмет и зарегистрироваться до закрытия приёма заявок","Разобрать задачи прошлых лет","Приехать на кампус в день олимпиады с документами","Дождаться результатов и оформить стипендию"],
+ prep:["Разбирать школьную программу на углублённом уровне","Решать задачи с ограничением времени","Заранее проверить логистику поездки"],
+ perks:["Полная стипендия для лучших участников","Знакомство с университетом","Опыт очного соревнования"],
+ grades:[9,10,11],formats:["Оффлайн"],cost:"free",deadline:"2027-05-01",event:"июнь 2027, Ташкент",online:false,link:"https://centralasian.uz/university_community/zph61k0p81-cau-opens-registration-for-the-internati",added:12},
+{id:"ca-summer-school",title:"Central Asia Summer School",org:"University of World Economy and Diplomacy",cat:"Летние школы",region:"Центральная Азия",
+ desc:"Летняя школа в Ташкенте: международные отношения, экономика, работа с кейсами.",
+ about:"Школа собирает участников из разных стран региона. Формат близок к университетскому: лекции, групповая работа над кейсами, финальная защита. Есть отбор.",
+ who:"Старшеклассники и студенты младших курсов из Центральной Азии и других стран.",
+ what:"Около недели занятий по международным отношениям, экономике и дипломатии, плюс культурная программа.",
+ steps:["Изучить условия: даты, взносы, требования к заявке","Заполнить заявку с мотивационным письмом","Дождаться решения по отбору","Оплатить участие и подготовить документы"],
+ prep:["Разобрать базовые понятия международных отношений","Писать мотивационное письмо под конкретную тему школы","Уточнить визовые требования"],
+ perks:["Международное окружение","Практика английского языка","Сертификат участника"],
+ grades:[10,11,12],formats:["Оффлайн"],cost:"paid",deadline:"2027-05-10",event:"29 июня – 5 июля 2027, Ташкент",online:false,link:"https://www.uwed.uz/en/news/1315",added:13},
+{id:"ipromo",title:"IPROMO Central Asia Summer School",org:"University of Central Asia",cat:"Летние школы",region:"Кыргызстан",
+ desc:"Летняя школа по климату и устойчивому развитию горных территорий на кампусе UCA в Нарыне.",
+ about:"Программа посвящена климату, ледникам и устойчивому развитию горных регионов — тема напрямую касается Кыргызстана. Основной поток составляют студенты и специалисты.",
+ who:"Основной поток — студенты и специалисты; школьникам стоит уточнить условия участия у организаторов.",
+ what:"Лекции, полевые занятия и групповая работа по темам климата, водных ресурсов и горных экосистем.",
+ steps:["Написать организаторам и уточнить возможность участия","Изучить темы: таяние ледников, водные ресурсы, климатическая политика","Подготовить короткое мотивационное письмо","При невозможности участия запросить материалы открытых сессий"],
+ prep:["Пройти базовые курсы по экологии и географии","Почитать о ледниках Тянь-Шаня","Подтянуть английский"],
+ perks:["Понимание климатической повестки региона","Контакты исследователей UCA","Тема для собственного проекта"],
+ grades:[11,12],formats:["Оффлайн"],cost:"free",deadline:"2027-03-15",event:"23 июня – 7 июля, Нарын",online:false,link:"https://ucentralasia.org/resources-and-media/events/2026/june/ipromo-central-asia-summer-school-2026",added:14},
+{id:"debate",title:"Школьная лига дебатов",org:"Дебатные клубы Бишкека",cat:"Дебаты",region:"Кыргызстан",
+ desc:"Турниры в формате British Parliamentary: команда из двух человек, роли спикеров, аргументация.",
+ about:"Дебаты — быстрый способ научиться публичным выступлениям и мышлению на ходу. Формат имитирует британский парламент: четыре команды, две стороны, жёсткий регламент.",
+ who:"Школьники 9–12 классов; опыт не требуется, клубы ведут тренировки для новичков.",
+ what:"Раунды по четыре команды, тема объявляется за 15 минут до выступления, судьи оценивают аргументацию и стиль.",
+ steps:["Найти дебатный клуб и прийти на тренировку","Найти напарника — выступления парные","Принять участие в первом турнире как новичок","Разбирать судейские протоколы после раундов"],
+ prep:["Читать новости на английском и русском","Тренировать структуру речи: тезис, аргумент, пример, вывод","Записывать выступления на видео"],
+ perks:["Навык публичных выступлений","Окружение мотивированных сверстников","Строка в портфолио для гуманитарных направлений"],
+ grades:[9,10,11,12],formats:["Оффлайн"],cost:"free",deadline:"2026-11-20",event:"декабрь 2026 – май 2027",online:false,link:"",added:15},
+{id:"mun",title:"Model United Nations (MUN)",org:"Школы и вузы Кыргызстана и региона",cat:"Дебаты",region:"Кыргызстан",
+ desc:"Имитация заседаний ООН: страна, комитет, резолюции, переговоры.",
+ about:"Ролевая игра в дипломатию: участник получает страну и комитет, изучает позицию и защищает её в дебатах, в финале пишет резолюцию вместе с другими делегациями.",
+ who:"Школьники 9–12 классов с английским среднего уровня и выше.",
+ what:"Подготовка позиции страны, работа в комитете, выступления, переговоры и написание резолюции.",
+ steps:["Найти конференцию в своём городе или онлайн и зарегистрироваться","Изучить позицию страны по повестке","Написать позиционный документ заранее","Работать в комитете над резолюцией"],
+ prep:["Читать официальные документы ООН и новости по повестке","Готовить короткие реплики","Тренировать деловой английский"],
+ perks:["Понимание международной политики","Практика английского в деловом формате","Награды за лучшую делегацию"],
+ grades:[9,10,11,12],formats:["Гибрид"],cost:"paid",deadline:"2026-12-10",event:"январь–март 2027",online:true,link:"",added:16},
+{id:"volunteer-bishkek",title:"Волонтёрские программы в Бишкеке",org:"Общественные фонды и городские инициативы",cat:"Волонтёрство",region:"Кыргызстан",
+ desc:"Экологические акции, помощь приютам, организация городских мероприятий, занятия с младшими школьниками.",
+ about:"Самый доступный вход в активность: часто достаточно заявки и короткого собеседования. Фонды ценят регулярность и дают рекомендации тем, кто приходит месяцами.",
+ who:"Школьники с 8 класса; для работы с детьми иногда нужно согласие родителей.",
+ what:"От двух до четырёх часов в неделю: субботники, помощь в приютах, сопровождение мероприятий, репетиторство.",
+ steps:["Выбрать направление: экология, помощь животным, дети, городские события","Заполнить форму волонтёра или написать в фонд","Пройти инструктаж","Ходить регулярно два-три месяца и вести учёт часов"],
+ prep:["Определить реальный объём свободного времени","Подготовить короткий рассказ о себе","Собрать контакты координатора"],
+ perks:["Волонтёрская книжка и подтверждённые часы","Рекомендательное письмо от фонда","Навыки работы в команде"],
+ grades:[8,9,10,11],formats:["Оффлайн"],cost:"free",deadline:"",event:"круглый год",online:false,link:"",added:17},
+{id:"online-olympiads",title:"Международные онлайн-олимпиады",org:"Международные образовательные платформы",cat:"Олимпиады",region:"Международное",
+ desc:"Онлайн-тестирования по математике, английскому и естественным наукам — без поездки.",
+ about:"Формат ближе к тестированию: задания с выбором ответа, фиксированная дата, результат и сертификат через несколько недель.",
+ who:"Школьники 8–11 классов; регистрация индивидуальная или через школу.",
+ what:"Тест на 60–90 минут по выбранному предмету, чаще всего на английском языке.",
+ steps:["Выбрать предмет и проверить расписание экзаменов","Зарегистрироваться и оплатить взнос, если он есть","Пройти тест онлайн в назначенную дату","Получить сертификат и разбор результатов"],
+ prep:["Пройти пробный тест","Проверить технические требования","Повторить давно не повторявшиеся темы"],
+ perks:["Международный сертификат с результатом","Независимая проверка уровня знаний","Участие без поездки"],
+ grades:[8,9,10,11],formats:["Онлайн"],cost:"paid",deadline:"2026-10-30",event:"декабрь 2026 – январь 2027",online:true,link:"https://www.pw.live/olympiad/exams/indian-talent-olympiad-registration-2026-27",added:18},
+{id:"research-lab",title:"Исследовательские проекты с вузами",org:"Лаборатории и кафедры университетов Кыргызстана",cat:"Наука",region:"Кыргызстан",
+ desc:"Участие в работе лаборатории или проекта под руководством наставника.",
+ about:"Такое участие почти не объявляют публично — попадают через письмо преподавателю. Зато именно этот опыт отличает заявку от десятков других.",
+ who:"Ученики 10–12 классов, готовые приходить в лабораторию в свободные дни.",
+ what:"Эксперименты, обработка данных, работа с оборудованием или литературой — от нескольких недель до учебного года.",
+ steps:["Выбрать кафедру или лабораторию по интересующему направлению","Написать письмо преподавателю: о себе, об интересе, о доступном времени","Обсудить на встрече, чем реально можно помочь","Работать регулярно и вести записи"],
+ prep:["Прочитать две-три статьи по теме","Подготовить короткое резюме","Настроиться на рутинную работу"],
+ perks:["Реальный исследовательский опыт","Рекомендация научного руководителя","Тема для научного конкурса"],
+ grades:[10,11,12],formats:["Гибрид"],cost:"free",deadline:"2026-11-15",event:"учебный год",online:true,link:"",added:19},
+{id:"startup",title:"Школа предпринимательства для школьников",org:"Бизнес-инкубаторы и акселераторы региона",cat:"Проекты",region:"Кыргызстан",
+ desc:"Курс по основам бизнеса: идея, исследование рынка, прототип, защита проекта перед инвесторами.",
+ about:"Формат акселератора: команда проходит путь от идеи до защиты. Навыки проверки гипотез и презентации применимы в любой профессии.",
+ who:"Школьники 9–12 классов, работа командами по два-четыре человека.",
+ what:"Занятия раз в неделю в течение нескольких месяцев, менторы и финальный демо-день.",
+ steps:["Придумать идею, решающую понятную проблему","Собрать команду и подать заявку","Пройти курс: интервью с пользователями, прототип, экономика","Защитить проект на демо-дне"],
+ prep:["Провести десять разговоров с потенциальными пользователями","Изучить основы финансов","Отрепетировать трёхминутный питч"],
+ perks:["Готовый проект и презентация","Менторы из реального бизнеса","Иногда стартовый грант команде"],
+ grades:[9,10,11,12],formats:["Гибрид"],cost:"free",deadline:"2026-12-05",event:"январь–апрель 2027",online:true,link:"",added:20},
+{id:"media",title:"Медиашкола: журналистика и видеоблогинг",org:"Независимые редакции и медиафонды",cat:"Проекты",region:"Кыргызстан",
+ desc:"Практический курс: найти тему, проверить факты, взять интервью, смонтировать видео.",
+ about:"Занятия ведут действующие журналисты, практика начинается с первых занятий. Курс заканчивается публикацией материала с именем автора.",
+ who:"Школьники 9–12 классов, интересующиеся медиа, текстами и видео.",
+ what:"Воркшопы по тексту, интервью и монтажу, работа над собственным материалом с редактором.",
+ steps:["Подать заявку и приложить пробную заметку","Определить тему материала до старта курса","Работать с редактором над черновиками","Опубликовать материал и запросить рекомендацию"],
+ prep:["Читать по три-четыре материала в неделю и разбирать структуру","Тренироваться писать заметки по 300 слов","Проверять факты минимум по двум источникам"],
+ perks:["Публикация в настоящем издании","Портфолио текстов и видео","Навык проверки фактов"],
+ grades:[9,10,11,12],formats:["Гибрид"],cost:"free",deadline:"2026-11-25",event:"декабрь 2026 – март 2027",online:true,link:"",added:21},
+{id:"art",title:"Конкурс рисунка и цифрового искусства",org:"Международные платформы и галереи",cat:"Творчество",region:"Международное",
+ desc:"Рисунок, иллюстрация, комикс, дизайн — темы обновляются каждый сезон, работы принимают онлайн.",
+ about:"Оценивается идея и исполнение, а не знание формул. Победители попадают в онлайн-выставку, участие пригодится при поступлении на творческие специальности.",
+ who:"Школьники 8–11 классов, техника любая — от карандаша до планшета.",
+ what:"Одна или несколько работ по теме сезона в цифровом виде, иногда с описанием идеи.",
+ steps:["Посмотреть тему сезона и требования к файлам","Выполнить работу от эскиза до финального варианта","Экспортировать в нужном формате и качестве","Отправить заявку до дедлайна"],
+ prep:["Вести скетчбук","Изучить работы победителей прошлых сезонов","Проверить разрешение и размер файла"],
+ perks:["Онлайн-выставка для лучших работ","Обратная связь жюри","Творческое портфолио"],
+ grades:[8,9,10,11],formats:["Онлайн"],cost:"paid",deadline:"2026-10-25",event:"ноябрь 2026",online:true,link:"https://www.pw.live/olympiad/exams/indian-talent-olympiad-registration-2026-27",added:22},
+{id:"volunteer-online",title:"Онлайн-волонтёрство и менторство",org:"Международные проекты и платформы",cat:"Волонтёрство",region:"Международное",
+ desc:"Помощь младшим школьникам с уроками, переводы, ведение соцсетей некоммерческих проектов.",
+ about:"Дистанционное волонтёрство снимает ограничение по географии: помогать можно из любого города и по удобному графику.",
+ who:"Школьники 9–12 классов с хорошим владением русским или английским.",
+ what:"От двух часов в неделю: онлайн-занятия, переводы, оформление материалов проекта.",
+ steps:["Заполнить форму волонтёра на выбранной платформе","Пройти инструктаж и выбрать расписание","Взять одну-две задачи в неделю","Вести учёт часов и подтверждать их у координатора"],
+ prep:["Определить своё сильное умение","Подготовить спокойное рабочее место","Уточнить порядок подтверждения часов"],
+ perks:["Волонтёрские часы без выхода из дома","Гибкий график","Опыт наставничества"],
+ grades:[9,10,11,12],formats:["Онлайн"],cost:"free",deadline:"",event:"круглый год",online:true,link:"",added:23},
+{id:"exchange",title:"Программы обмена и академический год за рубежом",org:"Стипендиальные фонды и фонды обмена",cat:"Стажировки",region:"Международное",
+ desc:"Учёба от семестра до года в школе другой страны: заявка, мотивационное письмо, интервью, тест по языку.",
+ about:"Самый сильный по эффекту и самый требовательный вариант: подавать нужно за шесть-двенадцать месяцев, к поездке добавляются виза и согласие семьи.",
+ who:"Ученики 9–11 классов с хорошей успеваемостью и знанием языка принимающей страны.",
+ what:"Отбор: анкета, мотивационное письмо, интервью, тест по языку. Далее — подбор школы, принимающая семья, виза.",
+ steps:["Выбрать программу и страну, проверить требования по классу","Подготовить табель, рекомендации и письмо о мотивации","Пройти интервью и языковой тест","Заняться визой, страховкой и подготовкой к переезду"],
+ prep:["Подтянуть язык до уровня, достаточного для учёбы","Обсудить с семьёй финансы и сроки","Писать письмо о конкретных причинах выбора страны"],
+ perks:["Полное погружение в язык и другую систему образования","Сильная заявка на поступление за рубежом","Опыт самостоятельной жизни"],
+ grades:[9,10,11],formats:["Оффлайн"],cost:"paid",deadline:"2026-12-15",event:"следующий учебный год",online:false,link:"",added:24}
+];
+
+/* ============================================================
+   ХРАНИЛИЩЕ И УТИЛИТЫ
+   ============================================================ */
+let userActs=[], savedIds=[], requests=[], digestText="";
+function load(){
+  try{ userActs=JSON.parse(localStorage.getItem("sh-acts")||"[]"); }catch(e){ userActs=[]; }
+  try{ savedIds=JSON.parse(localStorage.getItem("sh-saved")||"[]"); }catch(e){ savedIds=[]; }
+  try{ requests=JSON.parse(localStorage.getItem("sh-req")||"[]"); }catch(e){ requests=[]; }
+  try{ digestText=localStorage.getItem("sh-digest")||""; }catch(e){ digestText=""; }
+}
+function save(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function all(){ return userActs.concat(DATA); }
+function byId(id){ return all().find(a=>a.id===id); }
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function dl(a){ if(!a.deadline) return null; const t=Date.parse(a.deadline+"T23:59:59"); return isNaN(t)?null:Math.floor((t-TODAY)/DAY); }
+function isOpen(a){ const n=dl(a); return !a.deadline || (n!==null && n>=0); }
+function fdate(iso){
+  if(!iso) return "постоянный приём";
+  const d=new Date(iso+"T12:00:00");
+  return isNaN(d)?iso:d.getDate()+" "+MONTHS[d.getMonth()]+" "+d.getFullYear();
+}
+function dueInfo(a){
+  const n=dl(a);
+  if(n===null) return {cls:"open",txt:"Постоянный приём"};
+  if(n<0)      return {cls:"ok",  txt:"Приём закрыт"};
+  if(n===0)    return {cls:"urgent",txt:"Дедлайн сегодня"};
+  if(n<=21)    return {cls:"urgent",txt:"Осталось "+n+" дн."};
+  if(n<=60)    return {cls:"soon",txt:"Осталось "+n+" дн."};
+  return {cls:"ok",txt:"Осталось "+n+" дн."};
+}
+function gradesTxt(g){
+  if(!g||!g.length) return "любой класс";
+  const s=[...g].sort((a,b)=>a-b);
+  return s[0]===s[s.length-1]?s[0]+" класс":s[0]+"–"+s[s.length-1]+" класс";
+}
+
+/* ============================================================
+   КАРТОЧКА
+   ============================================================ */
+function cardHTML(a){
+  const d=dueInfo(a);
+  const n=dl(a);
+  const urgent = n!==null && n>=0 && n<=30 ? `<span class="tag urgent">скоро закрытие</span>` : "";
+  return `<button class="card" data-open="${a.id}">
+    <div class="head">
+      <div class="crest">${CAT_ICON[a.cat]||"⭐"}</div>
+      <div style="min-width:0">
+        <h3>${esc(a.title)}</h3>
+        <div class="org">${esc(a.org)}</div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag cat">${esc(a.cat)}</span>
+      ${a.formats.map(f=>`<span class="tag">${esc(f)}</span>`).join("")}
+      <span class="tag">${gradesTxt(a.grades)}</span>
+      ${urgent}
+    </div>
+    <p class="desc">${esc(a.desc)}</p>
+    <div class="facts-mini">
+      <div><span class="k">Регион</span><span class="v">${esc(a.region)}</span></div>
+      <div><span class="k">Сроки</span><span class="v">${esc(a.event||"—")}</span></div>
+      <div><span class="k">Заявка до</span><span class="v">${fdate(a.deadline)}</span></div>
+    </div>
+    <div class="bar">
+      <span class="due ${d.cls}">${d.txt}</span>
+      <span class="money ${a.cost==="free"?"free":"paid"}">${a.cost==="free"?"Без взноса":"Есть взнос"}</span>
+    </div>
+  </button>`;
+}
+
+/* ============================================================
+   КАТАЛОГ
+   ============================================================ */
+const ftState = { open:false, free:false, online:false, soon30:false };
+let query="", fCat="", fGrade="", fRegion="";
+
+function catalogList(){
+  const q=query.trim().toLowerCase();
+  return all().filter(a=>{
+    if(ftState.open && !isOpen(a)) return false;
+    if(ftState.free && a.cost!=="free") return false;
+    if(ftState.online && !a.online) return false;
+    if(ftState.soon30){ const n=dl(a); if(n===null||n<0||n>30) return false; }
+    if(fCat && a.cat!==fCat) return false;
+    if(fRegion && a.region!==fRegion) return false;
+    if(fGrade && !a.grades.includes(+fGrade)) return false;
+    if(q){
+      const hay=[a.title,a.org,a.cat,a.desc,a.about,a.region,(a.perks||[]).join(" "),gradesTxt(a.grades)].join(" ").toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  }).sort((x,y)=>{
+    const dx=dl(x),dy=dl(y);
+    const rx=dx===null?1e9:(dx<0?1e9-1:dx);
+    const ry=dy===null?1e9:(dy<0?1e9-1:dy);
+    return rx-ry || x.title.localeCompare(y.title,"ru");
+  });
+}
+function renderCatalog(){
+  const list=catalogList();
+  $("#mTotal").textContent=all().length;
+  $("#mSoon").textContent=all().filter(a=>{const n=dl(a); return n!==null&&n>=0&&n<=60;}).length;
+  $("#mFree").textContent=all().filter(a=>a.cost==="free").length;
+  $("#feedCount").textContent="найдено "+list.length;
+  const active=[];
+  if(fCat) active.push(fCat);
+  if(fGrade) active.push(fGrade+" класс");
+  if(fRegion) active.push(fRegion);
+  if(ftState.free) active.push("без взноса");
+  if(ftState.online) active.push("онлайн");
+  if(ftState.soon30) active.push("дедлайн до 30 дней");
+  if(ftState.open) active.push("приём открыт");
+  $("#feedTitle").textContent = active.length ? "Каталог: "+active.join(" · ") : "Каталог активностей";
+
+  const box=$("#feed");
+  box.innerHTML = list.length
+    ? list.map(cardHTML).join("")
+    : `<div class="empty" style="grid-column:1/-1"><b>По заданным условиям ничего не найдено</b>Измените фильтры или сбросьте их.</div>`;
+}
+
+/* ============================================================
+   ПОДБОР
+   ============================================================ */
+function planList(){
+  const g=$("#pGrade").value, reg=$("#pRegion").value, maxD=+$("#pDays").value;
+  const bud=$("#pBudget").value, onl=$("#pOnline").value;
+  return all().filter(a=>{
+    if(g && !a.grades.includes(+g)) return false;
+    if(reg && a.region!==reg) return false;
+    if(bud==="free" && a.cost!=="free") return false;
+    if(onl==="1" && !a.online) return false;
+    if(maxD<365){ const n=dl(a); if(n!==null && (n<0||n>maxD)) return false; }
+    return true;
+  }).sort((x,y)=>{
+    const dx=dl(x),dy=dl(y);
+    const rx=dx===null?1e9:(dx<0?1e9-1:dx);
+    const ry=dy===null?1e9:(dy<0?1e9-1:dy);
+    return rx-ry || x.title.localeCompare(y.title,"ru");
+  });
+}
+function renderPlan(){
+  const list=planList();
+  $("#planCount").textContent="подходит "+list.length;
+  $("#plan").innerHTML = list.length
+    ? list.map(cardHTML).join("")
+    : `<div class="empty" style="grid-column:1/-1"><b>Под эти параметры ничего не подходит</b>Расширьте регион или увеличьте срок до подачи заявки.</div>`;
+}
+
+/* ============================================================
+   МОЙ СПИСОК
+   ============================================================ */
+function renderSaved(){
+  const list=savedIds.map(byId).filter(Boolean);
+  $("#savedCount").textContent = list.length ? list.length+" в списке" : "";
+  $("#saved").innerHTML = list.length
+    ? list.map(cardHTML).join("")
+    : `<div class="empty" style="grid-column:1/-1"><b>Список пока пуст</b>Откройте любую активность и нажмите «Хочу участвовать» — она появится здесь.</div>`;
+}
+
+/* ============================================================
+   СТРАНИЦА АКТИВНОСТИ
+   ============================================================ */
+function renderDetail(id){
+  const a=byId(id);
+  if(!a) return go("feed");
+  const n=dl(a);
+  let cls="",big="",sm="";
+  if(n===null){ cls="closed"; big="Приём идёт постоянно"; sm="Заявку можно подать в любое время — уточните условия у организатора."; }
+  else if(n<0){ cls="closed"; big="Приём заявок закрыт"; sm="Даты обычно повторяются год к году — следите за следующим сезоном."; }
+  else if(n===0){ cls="urgent"; big="Последний день приёма"; sm="Заявки принимаются до конца дня "+fdate(a.deadline)+"."; }
+  else if(n<=14){ cls="urgent"; big="Осталось "+n+" дн."; sm="Дедлайн подачи — "+fdate(a.deadline)+". Успейте отправить заявку."; }
+  else { big="Осталось "+n+" дн."; sm="Дедлайн подачи заявки — "+fdate(a.deadline)+"."; }
+
+  const isSaved=savedIds.includes(id);
+  $("#dBreadcrumb").textContent="Активность / "+a.cat;
+
+  $("#dHead").innerHTML = `
+    <div class="dbadge">
+      <span class="pill cat">${esc(a.cat)}</span>
+      <span class="pill fmt">${a.formats.join(" · ")}</span>
+      <span class="grades">${gradesTxt(a.grades)} · ${esc(a.region)}</span>
+    </div>
+    <h1 class="dtitle">${esc(a.title)}</h1>
+    <div class="dorg">Организатор: ${esc(a.org)}</div>
+    <div class="dact">
+      ${a.link?`<a class="btn gold" href="${esc(a.link)}" target="_blank" rel="noopener">Перейти к регистрации</a>`:`<span class="btn ghost" style="cursor:default">Ссылка уточняется</span>`}
+      <button class="btn ghost" id="saveBtn">${isSaved?"Убрать из списка":"Хочу участвовать"}</button>
+    </div>`;
+
+  $("#dMain").innerHTML = `
+    <div class="block"><h4><span class="num">1</span>Об активности</h4><p>${esc(a.about||a.desc)}</p></div>
+    <div class="block"><h4><span class="num">2</span>Кто может участвовать</h4><p>${esc(a.who||gradesTxt(a.grades))}</p></div>
+    <div class="block"><h4><span class="num">3</span>Что требуется сделать</h4><p>${esc(a.what||"Формат уточняется у организатора.")}</p></div>
+    <div class="block"><h4><span class="num">4</span>Порядок участия</h4><ol>${(a.steps||[]).map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>
+    <div class="block"><h4><span class="num">5</span>Рекомендации по подготовке</h4><ul>${(a.prep||[]).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>
+    <div class="block"><h4><span class="num">6</span>Что получает участник</h4><ul>${(a.perks||[]).map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>`;
+
+  $("#dSide").innerHTML = `
+    <div class="deadline-box ${cls}"><b>${big}</b><small>${sm}</small></div>
+    <div class="block" style="margin-bottom:0">
+      <h4>Ключевые условия</h4>
+      <div class="factlist">
+        <div><span class="k">Дедлайн заявки</span><span class="v">${fdate(a.deadline)}</span></div>
+        <div><span class="k">Период проведения</span><span class="v">${esc(a.event||"—")}</span></div>
+        <div><span class="k">Формат</span><span class="v">${a.formats.join(", ")}</span></div>
+        <div><span class="k">Классы</span><span class="v">${gradesTxt(a.grades)}</span></div>
+        <div><span class="k">Взнос</span><span class="v">${a.cost==="free"?"Без взноса":"Есть взнос"}</span></div>
+      </div>
+    </div>`;
+
+  $("#saveBtn").onclick=()=>{
+    const i=savedIds.indexOf(id);
+    if(i<0) savedIds.push(id); else savedIds.splice(i,1);
+    save("sh-saved",savedIds);
+    renderSaved(); renderDetail(id);
+  };
+}
+
+/* ============================================================
+   ОРГАНИЗАТОРАМ
+   ============================================================ */
+function renderOrgStats(){
+  const soon=all().map(a=>dl(a)).filter(n=>n!==null&&n>=0).sort((x,y)=>x-y)[0];
+  $("#kpiAct").textContent=userActs.length;
+  $("#kpiReq").textContent=requests.length;
+  $("#kpiSoon").textContent=(soon===undefined?"—":soon);
+}
+function renderRequests(){
+  const box=$("#reqList");
+  if(!requests.length){
+    box.innerHTML=`<div class="empty" style="margin:0"><b>Заявок пока нет</b>Они появятся здесь, когда школьники нажмут «Хочу участвовать» на странице активности.</div>`;
+    return;
+  }
+  box.innerHTML=requests.map(r=>`
+    <div class="reqrow">
+      <div class="line1"><span class="nm">${esc(r.name)}</span><span class="gr">${esc(r.grade)} класс</span><span class="when">${esc(r.when)}</span></div>
+      <div class="det">${esc(r.contact)}</div>
+      <div class="det">Активность: ${esc(r.act)}</div>
+      ${r.comment?`<div class="cmt">«${esc(r.comment)}»</div>`:""}
+    </div>`).join("");
+}
+
+/* ============================================================
+   НАВИГАЦИЯ
+   ============================================================ */
+function go(name){
+  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("on"));
+  const el=document.getElementById("s-"+name);
+  if(el) el.classList.add("on");
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.go===name));
+  window.scrollTo(0,0);
+  if(name==="feed") renderCatalog();
+  if(name==="planner") renderPlan();
+  if(name==="saved") renderSaved();
+  if(name==="org"){ renderOrgStats(); renderRequests(); }
+}
+document.addEventListener("click",e=>{
+  const open=e.target.closest("[data-open]");
+  if(open){ renderDetail(open.dataset.open); go("detail"); return; }
+  const nav=e.target.closest("[data-go]");
+  if(nav){ e.preventDefault(); go(nav.dataset.go); }
+});
+$("#backBtn").onclick=()=>go("feed");
+$("#toHome").onclick=()=>go("feed");
+$("#searchGo").onclick=()=>go("feed");
+$("#q").addEventListener("input",e=>{ query=e.target.value; renderCatalog(); });
+$("#q").addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); renderCatalog(); } });
+
+$("#fCat").addEventListener("change",e=>{ fCat=e.target.value; renderCatalog(); });
+$("#fGrade").addEventListener("change",e=>{ fGrade=e.target.value; renderCatalog(); });
+$("#fRegion").addEventListener("change",e=>{ fRegion=e.target.value; renderCatalog(); });
+document.querySelectorAll("[data-ft]").forEach(b=>b.onclick=()=>{
+  const k=b.dataset.ft; ftState[k]=!ftState[k];
+  b.classList.toggle("on", ftState[k]);
+  renderCatalog();
+});
+$("#fReset").onclick=()=>{
+  fCat=fGrade=fRegion=""; query=""; $("#q").value="";
+  $("#fCat").value=""; $("#fGrade").value=""; $("#fRegion").value="";
+  Object.keys(ftState).forEach(k=>ftState[k]=false);
+  document.querySelectorAll("[data-ft]").forEach(b=>b.classList.remove("on"));
+  renderCatalog();
+};
+
+["pGrade","pRegion","pDays","pBudget","pOnline"].forEach(id=>$("#"+id).addEventListener("change",renderPlan));
+$("#clearPlan").onclick=()=>{
+  $("#pGrade").value=""; $("#pRegion").value=""; $("#pDays").value="365";
+  $("#pBudget").value=""; $("#pOnline").value="";
+  renderPlan();
+};
+
+const cats=[...new Set(all().map(a=>a.cat))].sort((x,y)=>x.localeCompare(y,"ru"));
+$("#fCat").innerHTML += cats.map(c=>`<option>${esc(c)}</option>`).join("");
+$("#fCat2").innerHTML = cats.map(c=>`<option>${esc(c)}</option>`).join("");
+
+$("#pubForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const lines=s=>(s||"").split("\n").map(x=>x.trim()).filter(Boolean);
+  const a={
+    id:"u-"+Date.now(),
+    title:$("#fTitle").value.trim(),
+    org:$("#fOrgName").value.trim()||"Организатор не указан",
+    cat:$("#fCat2").value,
+    desc:$("#fDesc").value.trim(),
+    about:$("#fDesc").value.trim(),
+    who:"Классы участников: "+gradesTxt($("#fGrades").value.split(",").map(Number))+".",
+    what:"Формат и задания уточняются у организатора.",
+    steps:lines($("#fSteps").value),
+    prep:lines($("#fPrep").value),
+    perks:lines($("#fPerks").value),
+    grades:$("#fGrades").value.split(",").map(Number),
+    formats:[$("#fFormats").value],
+    cost:$("#fCost").value,
+    deadline:$("#fDeadline").value||"",
+    event:"уточняется",
+    region:"Кыргызстан",
+    online:$("#fFormats").value==="Онлайн",
+    link:$("#fLink").value.trim(),
+    added:Date.now()
+  };
+  if(!a.steps.length) a.steps=["Уточнить детали у организатора","Подать заявку до дедлайна"];
+  if(!a.prep.length) a.prep=["Ознакомиться с требованиями на странице регистрации"];
+  if(!a.perks.length) a.perks=["Уточняется у организатора"];
+  userActs.unshift(a); save("sh-acts",userActs.slice(0,120));
+  e.target.reset();
+  $("#pubOk").hidden=false; setTimeout(()=>$("#pubOk").hidden=true,4000);
+  renderCatalog(); renderOrgStats();
+  renderDetail(a.id); go("detail");
+});
+$("#demoReq").onclick=()=>{
+  const people=[["Айдана",10,"aidana@example.com"],["Бекзат",11,"bekzat@example.com"],["Нурсултан",9,"nurs@example.com"]];
+  const p=people[Math.floor(Math.random()*people.length)];
+  const act=all()[Math.floor(Math.random()*all().length)];
+  requests.unshift({name:p[0],grade:p[1],contact:p[2],act:act.title,comment:"Готовлюсь по этому направлению, хочу участвовать.",when:new Date().toLocaleDateString("ru-RU")});
+  save("sh-req",requests.slice(0,200)); renderOrgStats(); renderRequests();
+};
+$("#clearReq").onclick=()=>{ requests=[]; save("sh-req",requests); renderOrgStats(); renderRequests(); };
+$("#digest").value=digestText;
+$("#saveDigest").onclick=()=>{
+  digestText=$("#digest").value; try{ localStorage.setItem("sh-digest",digestText); }catch(e){}
+  $("#digestOk").hidden=false; setTimeout(()=>$("#digestOk").hidden=true,3000);
+};
+
+/* ============================================================
+   СТАРТ
+   ============================================================ */
+load();
+renderCatalog();
+renderSaved();
+renderOrgStats();
+renderRequests();
+</script>
+</body>
+</html>
