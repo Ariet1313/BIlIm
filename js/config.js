@@ -35,7 +35,7 @@ window.BIYIK_CONFIG = {
   /* ── 3. Счётчик посещений GoatCounter ──
      Зарегистрируйся на https://www.goatcounter.com, придумай код сайта (например "biyik")
      и впиши его сюда. В настройках GoatCounter включи «Allow adding visitor counts on your website». */
-  goatcounter: "",          // например: "biyik"  →  статистика на https://biyik.goatcounter.com
+  goatcounter: "biyik",     // например: "biyik"  →  статистика на https://biyik.goatcounter.com
   supabaseUrl: "",          // например: "https://abcd1234.supabase.co"
   supabaseKey: ""           // публичный anon key из Supabase → Project Settings → API
 };
