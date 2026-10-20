@@ -107,18 +107,34 @@
   }
 
   /* ═════════════ ЛОГОТИП: солнце флага + тундук-глобус + орбита ═════════════ */
-  function logoSVG({ uid = "lg", orbit = "#c4161c", rays = "#f5b21a" } = {}) {
+  const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function logoSVG({ uid = "lg", orbit = "#c4161c", rays = "#f5b21a", animate = false } = {}) {
     let r = "";
     for (let i = 0; i < 40; i++) { // 40 лучей — как на флаге Кыргызстана
       const a = (i / 40) * Math.PI * 2, l2 = i % 2 ? 82 : 90;
       r += `<line x1="${(Math.cos(a) * 66).toFixed(1)}" y1="${(Math.sin(a) * 66).toFixed(1)}" x2="${(Math.cos(a) * l2).toFixed(1)}" y2="${(Math.sin(a) * l2).toFixed(1)}"/>`;
     }
     const tr = "rotate(-22)";
+    const anim = animate && !REDUCED;
+    // Орбита: первая половина пути — перед глобусом, вторая — за ним
+    const ORBIT = "M96 0A96 28 0 0 1 -96 0A96 28 0 0 1 96 0";
+    const DUR = "9s";
+    const sat = (front) => anim
+      ? `<g transform="${tr}"><circle r="10" fill="#f5b21a" stroke="${orbit}" stroke-width="4" opacity="${front ? 1 : 0}">
+           <animateMotion dur="${DUR}" repeatCount="indefinite" path="${ORBIT}"/>
+           <animate attributeName="opacity" dur="${DUR}" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.5" values="${front ? "1;0" : "0;1"}"/>
+         </circle></g>`
+      : front ? `<g transform="${tr}"><circle cx="70" cy="19" r="10" fill="#f5b21a" stroke="${orbit}" stroke-width="4"/></g>` : "";
+    const breathe = anim
+      ? `<animateTransform attributeName="transform" type="scale" values="1;1.06;1" keyTimes="0;0.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="4.5s" repeatCount="indefinite"/>
+         <animate attributeName="opacity" values="1;.75;1" dur="4.5s" repeatCount="indefinite"/>`
+      : "";
     return `<svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs><clipPath id="${uid}g"><circle r="50"/></clipPath>
       <linearGradient id="${uid}b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#33b8f2"/><stop offset="1" stop-color="#0a6fb8"/></linearGradient></defs>
-      <g class="logo-rays" stroke="${rays}" stroke-width="5" stroke-linecap="round">${r}</g>
+      <g stroke="${rays}" stroke-width="5" stroke-linecap="round">${breathe}${r}</g>
       <path d="M-96 0A96 28 0 0 1 96 0" transform="${tr}" fill="none" stroke="${orbit}" stroke-width="5" stroke-linecap="round"/>
+      ${sat(false)}
       <circle r="60" fill="#c4161c"/>
       <circle r="50" fill="url(#${uid}b)"/>
       <g clip-path="url(#${uid}g)" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
@@ -126,7 +142,7 @@
         <path d="M-50 -22Q0 -34 50 -22M-50 22Q0 10 50 22M-50 0Q0 -12 50 0"/>
       </g>
       <path d="M96 0A96 28 0 0 1 -96 0" transform="${tr}" fill="none" stroke="${orbit}" stroke-width="5" stroke-linecap="round"/>
-      <g transform="${tr}"><circle cx="70" cy="19" r="10" fill="#f5b21a" stroke="${orbit}" stroke-width="4"/></g>
+      ${sat(true)}
     </svg>`;
   }
 
@@ -210,7 +226,7 @@
     </div></footer>`;
   }
 
-  $$("[data-logo]").forEach((el, i) => { el.innerHTML = logoSVG({ uid: "big" + i, orbit: el.dataset.logo || "#f5b21a" }); });
+  $$("[data-logo]").forEach((el, i) => { el.innerHTML = logoSVG({ uid: "big" + i, orbit: el.dataset.logo || "#f5b21a", animate: el.classList.contains("hero-logo") }); });
   $$("[data-tunduk]").forEach((el, i) => { el.innerHTML = tunduk({ uid: "tk" + i, spokes: +el.dataset.tunduk || 36 }); });
   $$("[data-rosette]").forEach((el) => { el.innerHTML = rosette(el.dataset.rosette || "#f5b21a", el.dataset.out || "#8f0f14"); });
   $$("[data-divider]").forEach((el) => { el.innerHTML = divider(el.dataset.divider || "var(--red)"); });
