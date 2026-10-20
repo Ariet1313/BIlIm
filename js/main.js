@@ -59,7 +59,7 @@
       footAbout: "Бийик — «жогорку» деген маани. Дүйнөнүн мыкты ЖОЖдорунда окуп, илим менен алектенгиси келген Кыргызстандын окуучулары үчүн сайт.",
       footSections: "Бөлүмдөр", footData: "Маалымат тууралуу чынын айтсак",
       footDataText: (d) => `Маалыматты ЖИ ачык булактардан чогулткан: жаңылыктар, олимпиадалардын жана программалардын расмий сайттары. Ар бир фактынын булагына шилтеме бар. Акыркы текшерүү: ${d}. Келүүчүлөр кошкон нерселер өзүнчө белгиленет. Мөөнөттөр жыл сайын өзгөрөт, ошондуктан тапшыруудан мурун расмий сайттан текшер.`,
-      footCopy: "билим берүү долбоору", footAuthor: "автору — Ариет Алимжанов", footMade: "Ош шаарында жасалды, Кыргызстан 🇰🇬",
+      footCopy: "билим берүү долбоору", footAuthor: "автору — Ариет Алимжанов", footMade: "Ош шаарында жасалды, Кыргызстан 🇰🇬", views: "жолу сайт каралды",
       pvLabel: "Кыргыз макалы", pvOrig: "Орусча окшошу", pvLit: "сөзмө-сөз",
       more: "Кененирээк →", official: "Расмий сайт →", source: "Булак",
       who: "Ким", when: "Мөөнөт", money: "Акча", exams: "Экзамендер", startHere: "Ушул жерден башта", kgLabel: "Кыргызстан",
@@ -222,7 +222,7 @@
         <div><h4>${esc(UI.footSections)}</h4><ul>${pages.map(([h, t]) => `<li><a href="${h}">${t}</a></li>`).join("")}</ul></div>
         <div><h4>${esc(UI.footData)}</h4><p style="font-size:.92rem">${esc(UI.footDataText(window.CHECKED))}</p></div>
       </div>
-      <div class="foot-bottom"><span>© ${today.getFullYear()} Бийик · ${esc(UI.footCopy)} · <a href="about.html">${esc(UI.footAuthor)}</a></span><span>${esc(UI.footMade)}</span></div>
+      <div class="foot-bottom"><span>© ${today.getFullYear()} Бийик · ${esc(UI.footCopy)} · <a href="about.html">${esc(UI.footAuthor)}</a></span><span class="views" hidden>👁 <b></b> ${esc(UI.views)}</span><span>${esc(UI.footMade)}</span></div>
     </div></footer>`;
   }
 
@@ -530,6 +530,21 @@
   if (ah) ah.innerHTML = `${photo("author-photo sm", "ah")}
       <div><div class="eyebrow">${esc(UI.authorLabel)}</div><h2>${esc(A.name)}</h2><p class="author-role">📍 ${esc(AL.role || "")}</p>
       ${AL.motto ? `<blockquote class="author-motto dark">«${esc(AL.motto)}»</blockquote>` : ""}</div>`;
+
+  /* ═════════════ СЧЁТЧИК ПОСЕЩЕНИЙ (GoatCounter) ═════════════ */
+  const GC = String(CFG.goatcounter || "").trim().toLowerCase().replace(/[^a-z0-9-]/g, "");
+  if (GC && location.protocol.startsWith("http")) {
+    const sc = document.createElement("script");
+    sc.async = true; sc.src = "https://gc.zgo.at/count.js";
+    sc.dataset.goatcounter = `https://${GC}.goatcounter.com/count`;
+    document.head.appendChild(sc);
+    fetch(`https://${GC}.goatcounter.com/counter/TOTAL.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        const v = $(".views");
+        if (j && j.count && v) { $("b", v).textContent = j.count; v.hidden = false; }
+      }).catch(() => {});
+  }
 
   /* ═════════════ ПОЯВЛЕНИЕ ПРИ СКРОЛЛЕ ═════════════ */
   var io;

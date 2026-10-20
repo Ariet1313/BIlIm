@@ -472,3 +472,4 @@ details > div { padding: 0 20px 18px; color: var(--ink-soft); }
   .lang-switch button { padding: 6px 9px; }
   .burger { padding: 4px; }
 }
+.views b { color: #ffd44d; font-weight: 800; }

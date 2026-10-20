@@ -32,6 +32,10 @@ window.AUTHOR = {
    Пока поля пустые, всё, что добавляют посетители, сохраняется только в их браузере.
    Как подключить бесплатную базу Supabase — смотри README.md, раздел «База данных». */
 window.BIYIK_CONFIG = {
+  /* ── 3. Счётчик посещений GoatCounter ──
+     Зарегистрируйся на https://www.goatcounter.com, придумай код сайта (например "biyik")
+     и впиши его сюда. В настройках GoatCounter включи «Allow adding visitor counts on your website». */
+  goatcounter: "",          // например: "biyik"  →  статистика на https://biyik.goatcounter.com
   supabaseUrl: "",          // например: "https://abcd1234.supabase.co"
   supabaseKey: ""           // публичный anon key из Supabase → Project Settings → API
 };

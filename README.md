@@ -54,6 +54,12 @@ create policy "submit" on submissions for insert
 3. В **Project Settings → API** скопируй `Project URL` и `anon public key` и вставь их в `js/config.js`.
 4. **Модерация:** в **Table Editor → submissions** проверь запись (открой ссылку-источник) и поставь `approved = true`. После этого её увидят все.
 
+## Счётчик посещений
+1. Зарегистрируйся на https://www.goatcounter.com и придумай код сайта (например `biyik`).
+2. Впиши код в `js/config.js` → `goatcounter: "biyik"`.
+3. В GoatCounter: Settings → включи **Allow adding visitor counts on your website** — тогда число просмотров появится внизу сайта.
+4. Подробная статистика (страницы, страны, устройства) — на `https://biyik.goatcounter.com`.
+
 ## Языки
 Переключатель РУС / КЫР в шапке. Статичный текст страниц хранится в атрибутах `data-ky`, данные — в `js/data-ky.js`.
 На русском пословицы показаны как похожие по смыслу русские аналоги, на кыргызском — оригинальные макалдар.
