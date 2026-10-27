@@ -19,12 +19,13 @@
 
   const UI = {
     ru: {
-      nav: ["Главная", "Как поступить", "Олимпиады", "Программы", "Research", "Истории", "О проекте"],
+      nav: ["Главная", "Лента", "Как поступить", "Олимпиады", "Программы", "Research", "Истории", "О проекте"],
       switchTo: "КЫР", switchTitle: "Кыргызча",
       footAbout: "Бийик — значит «высокий». Сайт для школьников Кыргызстана, которые хотят учиться в лучших вузах мира и заниматься наукой.",
       footSections: "Разделы", footData: "Честно о данных",
       footDataText: (d) => `Информацию собрал ИИ по открытым источникам: новости, официальные сайты олимпиад и программ. У каждого факта есть ссылка на источник. Последняя проверка: ${d}. То, что добавляют посетители, помечено отдельно. Сроки меняются каждый год, поэтому перед подачей проверяй их на официальном сайте.`,
-      footCopy: "образовательный проект", footAuthor: "автор — Ариет Алимжанов", footMade: "Сделано в Оше, Кыргызстан 🇰🇬",
+      footCopy: "образовательный проект", footAuthor: "автор — Ариет Алимжанов", footMade: "Сделано в Оше, Кыргызстан 🇰🇬", views: "просмотров сайта",
+      feed: { types: { all: "Всё", news: "Новости", opp: "Возможности", uni: "Вузы", fact: "Факты" }, source: "Источник", share: "Поделиться", copied: "Ссылка скопирована", until: "до", daysLeft: (d) => `осталось ${d} дн.`, hint: "Листай вверх ↑", updated: "Обновлено", empty: "Пока пусто — загляни позже.", openFeed: "Открыть ленту →" },
       pvLabel: "Пословица", pvOrig: "Кыргызский оригинал", pvLit: "дословно",
       more: "Подробнее →", official: "Официальный сайт →", source: "Источник",
       who: "Кто", when: "Сроки", money: "Деньги", exams: "Экзамены", startHere: "Начни отсюда", kgLabel: "Кыргызстан",
@@ -54,12 +55,13 @@
       }
     },
     ky: {
-      nav: ["Башкы бет", "Тапшыруу", "Олимпиадалар", "Программалар", "Research", "Окуялар", "Долбоор"],
+      nav: ["Башкы бет", "Тасма", "Тапшыруу", "Олимпиадалар", "Программалар", "Research", "Окуялар", "Долбоор"],
       switchTo: "РУС", switchTitle: "По-русски",
       footAbout: "Бийик — «жогорку» деген маани. Дүйнөнүн мыкты ЖОЖдорунда окуп, илим менен алектенгиси келген Кыргызстандын окуучулары үчүн сайт.",
       footSections: "Бөлүмдөр", footData: "Маалымат тууралуу чынын айтсак",
       footDataText: (d) => `Маалыматты ЖИ ачык булактардан чогулткан: жаңылыктар, олимпиадалардын жана программалардын расмий сайттары. Ар бир фактынын булагына шилтеме бар. Акыркы текшерүү: ${d}. Келүүчүлөр кошкон нерселер өзүнчө белгиленет. Мөөнөттөр жыл сайын өзгөрөт, ошондуктан тапшыруудан мурун расмий сайттан текшер.`,
       footCopy: "билим берүү долбоору", footAuthor: "автору — Ариет Алимжанов", footMade: "Ош шаарында жасалды, Кыргызстан 🇰🇬", views: "жолу сайт каралды",
+      feed: { types: { all: "Баары", news: "Жаңылыктар", opp: "Мүмкүнчүлүктөр", uni: "ЖОЖдор", fact: "Фактылар" }, source: "Булак", share: "Бөлүшүү", copied: "Шилтеме көчүрүлдү", until: "чейин", daysLeft: (d) => `${d} күн калды`, hint: "Өйдө сүр ↑", updated: "Жаңыланды", empty: "Азырынча бош — кийинчерээк кир.", openFeed: "Тасманы ачуу →" },
       pvLabel: "Кыргыз макалы", pvOrig: "Орусча окшошу", pvLit: "сөзмө-сөз",
       more: "Кененирээк →", official: "Расмий сайт →", source: "Булак",
       who: "Ким", when: "Мөөнөт", money: "Акча", exams: "Экзамендер", startHere: "Ушул жерден башта", kgLabel: "Кыргызстан",
@@ -186,7 +188,7 @@
   window.BIYIK = { tunduk, rosette, divider, logoSVG };
 
   /* ═════════════ ШАПКА И ПОДВАЛ ═════════════ */
-  const files = ["index.html", "guide.html", "olympiads.html", "programs.html", "research.html", "stories.html", "about.html"];
+  const files = ["index.html", "feed.html", "guide.html", "olympiads.html", "programs.html", "research.html", "stories.html", "about.html"];
   const pages = files.map((f, i) => [f, UI.nav[i]]);
   const current = location.pathname.split("/").pop() || "index.html";
   const logo = (uid, orbit) => `<a class="logo" href="index.html">${logoSVG({ uid, orbit })}<span>Бийик<small>Kyrgyzstan → World</small></span></a>`;
@@ -530,6 +532,98 @@
   if (ah) ah.innerHTML = `${photo("author-photo sm", "ah")}
       <div><div class="eyebrow">${esc(UI.authorLabel)}</div><h2>${esc(A.name)}</h2><p class="author-role">📍 ${esc(AL.role || "")}</p>
       ${AL.motto ? `<blockquote class="author-motto dark">«${esc(AL.motto)}»</blockquote>` : ""}</div>`;
+
+
+  /* ═════════════ ЛЕНТА (как Reels) ═════════════ */
+  const FEEDDATA = window.FEED || { items: [] };
+  const F = UI.feed;
+  const todayISO = new Date(today.getTime() - today.getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
+  const liveItems = (() => {
+    const all = (FEEDDATA.items || [])
+      .filter((x) => !x.expires || x.expires >= todayISO)
+      .map((x) => ({ ...x, daysLeft: x.expires ? Math.round((day(x.expires) - day(todayISO)) / 864e5) : null }))
+      .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    // Сначала срочные возможности (≤ 14 дней), потом типы вперемешку: новость, вуз, факт, возможность…
+    const urgent = all.filter((x) => x.daysLeft !== null && x.daysLeft <= 14).sort((a, b) => a.daysLeft - b.daysLeft);
+    const rest = all.filter((x) => !urgent.includes(x));
+    const order = ["news", "uni", "fact", "opp"];
+    const groups = order.map((t) => rest.filter((x) => x.type === t)).concat([rest.filter((x) => !order.includes(x.type))]);
+    const mixed = [];
+    while (groups.some((g) => g.length)) groups.forEach((g) => g.length && mixed.push(g.shift()));
+    return [...urgent, ...mixed];
+  })();
+  const tx = (o) => (o && (o[LANG] || o.ru)) || "";
+  const fdate = (s) => { const d = day(s); return `${d.getDate()} ${UI.months[d.getMonth()]} ${d.getFullYear()}`; };
+  const untilTxt = (s) => KY ? `${fdate(s)} ${F.until}` : `${F.until} ${fdate(s)}`;
+  const LIKES = "biyik-likes";
+  const likes = (() => { try { return new Set(JSON.parse(localStorage.getItem(LIKES) || "[]")); } catch { return new Set(); } })();
+  const saveLikes = () => { try { localStorage.setItem(LIKES, JSON.stringify([...likes])); } catch {} };
+
+  const slide = (x, i, n) => `<article class="slide t-${esc(x.type)}" id="${esc(x.id)}">
+      <div class="slide-orn">${rosette("#ffffff", "rgba(0,0,0,.15)", "rgba(255,255,255,.6)")}</div>
+      <div class="slide-top"><span class="slide-type">${esc(F.types[x.type] || x.type)}</span><span class="slide-count">${i + 1} / ${n}</span></div>
+      <div class="slide-body">
+        <div class="slide-emoji" aria-hidden="true">${esc(x.emoji || "✨")}</div>
+        ${x.daysLeft !== null ? `<div class="slide-deadline">⏳ ${esc(untilTxt(x.expires))} · ${esc(F.daysLeft(x.daysLeft))}</div>` : ""}
+        <h2>${esc(tx(x.title))}</h2>
+        <p>${esc(tx(x.text))}</p>
+        <div class="slide-meta">${esc(fdate(x.date))}${x.source && safeUrl(x.source.url) ? ` · <a href="${esc(x.source.url)}" target="_blank" rel="noopener">${esc(F.source)}: ${esc(x.source.name)}</a>` : ""}</div>
+      </div>
+      <div class="slide-actions">
+        <button class="sa like" data-id="${esc(x.id)}" aria-pressed="${likes.has(x.id)}" aria-label="Like">${likes.has(x.id) ? "❤️" : "🤍"}</button>
+        <button class="sa share" data-id="${esc(x.id)}" aria-label="${esc(F.share)}">↗</button>
+      </div>
+    </article>`;
+
+  const feedEl = $("#feed");
+  if (feedEl) {
+    let type = "all";
+    const chips = $("#feed-chips");
+    const draw = () => {
+      chips.innerHTML = Object.entries(F.types).map(([k, v]) => `<button class="chip" data-t="${k}" aria-pressed="${k === type}">${esc(v)}</button>`).join("");
+      const list = liveItems.filter((x) => type === "all" || x.type === type);
+      feedEl.innerHTML = list.length
+        ? list.map((x, i) => slide(x, i, list.length)).join("") + `<div class="slide-end"><div>${divider("#ffffff")}<p>${esc(F.updated)}: ${esc(fdate(FEEDDATA.updated || todayISO))}</p></div></div>`
+        : `<p class="empty">${esc(F.empty)}</p>`;
+      feedEl.scrollTop = 0;
+    };
+    chips.addEventListener("click", (e) => { const b = e.target.closest(".chip"); if (!b) return; type = b.dataset.t; draw(); });
+    feedEl.addEventListener("click", async (e) => {
+      const lk = e.target.closest(".like"), sh = e.target.closest(".share");
+      if (lk) {
+        const id = lk.dataset.id;
+        likes.has(id) ? likes.delete(id) : likes.add(id); saveLikes();
+        lk.setAttribute("aria-pressed", likes.has(id)); lk.textContent = likes.has(id) ? "❤️" : "🤍";
+        lk.classList.remove("pop"); void lk.offsetWidth; lk.classList.add("pop");
+      }
+      if (sh) {
+        const url = location.href.split("#")[0] + "#" + sh.dataset.id;
+        const item = liveItems.find((x) => x.id === sh.dataset.id);
+        try {
+          if (navigator.share) await navigator.share({ title: tx(item && item.title), url });
+          else { await navigator.clipboard.writeText(url); toast(F.copied); }
+        } catch {}
+      }
+    });
+    document.addEventListener("keydown", (e) => {
+      if (!["ArrowDown", "ArrowUp", "PageDown", "PageUp"].includes(e.key)) return;
+      e.preventDefault();
+      const dir = e.key === "ArrowDown" || e.key === "PageDown" ? 1 : -1;
+      feedEl.scrollBy({ top: dir * feedEl.clientHeight, behavior: "smooth" });
+    });
+    draw();
+    const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target) feedEl.scrollTop = target.offsetTop - feedEl.offsetTop;
+  }
+
+  /* Превью ленты на главной */
+  const fp = $("#feed-preview");
+  if (fp) fp.innerHTML = ["opp", "news", "uni", "fact"].map((t) => liveItems.find((x) => x.type === t)).filter(Boolean).map((x) => `<a class="fp-card t-${esc(x.type)} reveal" href="feed.html#${esc(x.id)}">
+      <span class="slide-type">${esc(F.types[x.type] || x.type)}</span>
+      <span class="fp-emoji">${esc(x.emoji || "✨")}</span>
+      <b>${esc(tx(x.title))}</b>
+      <small>${x.daysLeft !== null ? `⏳ ${esc(F.daysLeft(x.daysLeft))}` : esc(fdate(x.date))}</small>
+    </a>`).join("");
 
   /* ═════════════ СЧЁТЧИК ПОСЕЩЕНИЙ (GoatCounter) ═════════════ */
   const GC = String(CFG.goatcounter || "").trim().toLowerCase().replace(/[^a-z0-9-]/g, "");
