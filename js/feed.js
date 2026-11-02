@@ -1,7 +1,26 @@
 /* Лента «Бийик». Этот файл обновляет ИИ (ежедневная задача). Формат: window.FEED = <JSON>; */
 window.FEED = {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "items": [
+  {
+   "id": "2026-11-02-opp-yygs-2027",
+   "type": "opp",
+   "date": "2026-11-02",
+   "expires": "2027-01-06",
+   "emoji": "🎓",
+   "title": {
+    "ru": "Летняя школа Yale (YYGS): заявки до 6 января",
+    "ky": "Yale жайкы мектеби (YYGS): арыздар 6-январга чейин"
+   },
+   "text": {
+    "ru": "Две недели в Йеле летом 2027 года для школьников 16–18 лет, которые выпускаются в 2028 или 2029 году. Подавать можно из любой страны. Обучение стоит $7 500, но есть помощь по нужде — до 100% стоимости.",
+    "ky": "2027-жылдын жайында Йелде эки жума — 2028 же 2029-жылы бүтүрө турган 16–18 жаштагы окуучулар үчүн. Каалаган өлкөдөн тапшырса болот. Окуу $7 500 турат, бирок муктаждыкка жараша 100%ке чейин жардам бар."
+   },
+   "source": {
+    "name": "Yale Young Global Scholars",
+    "url": "https://globalscholars.yale.edu/node/1455"
+   }
+  },
   {
    "id": "2026-10-21-stelele-informaticii",
    "type": "news",
@@ -54,25 +73,6 @@ window.FEED = {
    "source": {
     "name": "Kaktus.media",
     "url": "https://kaktus.media/doc/555810_minnayki_rasskazalo_o_vozmojnostiah_obycheniia_kyrgyzstancev_v_deviati_stranah.html"
-   }
-  },
-  {
-   "id": "opp-us-early-2026",
-   "type": "opp",
-   "date": "2026-10-27",
-   "expires": "2026-11-01",
-   "emoji": "⏰",
-   "title": {
-    "ru": "1 ноября — Early-дедлайн в вузы США",
-    "ky": "1-ноябрь — АКШнын ЖОЖдоруна Early-дедлайн"
-   },
-   "text": {
-    "ru": "У большинства американских вузов ранняя подача (Early Decision / Early Action) заканчивается 1 ноября. Если не успеваешь — есть Regular, обычно до 1–5 января.",
-    "ky": "Көпчүлүк америкалык ЖОЖдордо эрте тапшыруу (Early Decision / Early Action) 1-ноябрда бүтөт. Үлгүрбөсөң — Regular бар, адатта 1–5-январга чейин."
-   },
-   "source": {
-    "name": "FindMyOrbit",
-    "url": "https://www.findmyorbit.com/blog/need-blind-vs-need-aware-2026"
    }
   },
   {
